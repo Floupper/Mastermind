@@ -23,7 +23,18 @@ package Mastermind {
         }
 
         class Manche {
+            - nombre_max_tentatives: Integer
+            + <<create>> Manche()
+            + ajouter_tentative(tentative: Combinaison)
+            + verifier_fin_manche(): Boolean
+        }
 
+        class Score {
+            - score_manche_actuelle: Integer
+            - score_total: Integer
+            + <<create>> Score()
+            + calculer_score_manche(tentative: Combinaison)
+            + calculer_score_total(): Integer
         }
 
         class Ligne_indice {
@@ -35,7 +46,10 @@ package Mastermind {
         }
 
         class Combinaison {
-            
+            - pions: Pions[*]
+            + <<create>> Combinaison()
+            + generer_combinaison()
+            + verifier_correspondance(tentative: Combinaison): Indices
         }
 
         interface Strategy_mode {
@@ -68,9 +82,6 @@ package Mastermind {
         class Mode_factory {
 
         }
-
-        ' class 
-
     }
 
     ' package view
@@ -94,7 +105,7 @@ package Mastermind {
     ' }
 
     class Mastermind_app {
-
+        + {static} main(args: String[])
     }
 }
 
@@ -103,7 +114,7 @@ Partie --> "*\n -_manches" Manche: > est composé de
 Indice --> "*\n -_indices" Ligne_indice: > est composé de
 Manche -> "*\n -_indices" Indice: > est composé de
 Manche -> "*\n -_tentatives" Combinaison: > est composé de
-Partie -> "1\n -_combinaison_secrete" Combinaison: > est composé de
+Manche -> "1\n -_combinaison_secrete" Combinaison: > est composé de
 Combinaison o--> "*\n -_combinaison" Pions: > est composé de
 
 Mastermind_app --> "1\n -_partie" Partie: > lance
