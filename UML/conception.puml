@@ -1,4 +1,4 @@
-@startuml
+@startuml Mastermind
 
 title Conception Mastermind
 
@@ -26,6 +26,7 @@ package Mastermind {
             - nombre_max_tentatives: Integer
             + <<create>> Manche()
             + ajouter_tentative(tentative: Combinaison)
+            + verifier_tentative(tentative: Combinaison): Ligne_Indices[*]
             + verifier_fin_manche(): Boolean
         }
 
@@ -37,35 +38,39 @@ package Mastermind {
             + calculer_score_total(): Integer
         }
 
-        class Ligne_indice {
-
+        class Ligne_Indices {
+            + <<create>> Ligne_Indices()
+            + get_nb_bonne_position(): Integer
+            + get_nb_bonne_couleur(): Integer
         }
 
         class Indice {
-            
+            - state: Integer 
+            ' 0: non trouvé, 1: bonne couleur, 2: bien placé
+            + verifier_position(): Integer
+            + verifier_couleur(): Integer
         }
 
         class Combinaison {
-            - pions: Pions[*]
             + <<create>> Combinaison()
-            + generer_combinaison()
-            + verifier_correspondance(tentative: Combinaison): Indices
+            + generer_combinaison_secrete(): Combinaison
+            + verifier_correspondance(tentative: Combinaison): Ligne_Indices
         }
 
         interface Strategy_mode {
-
+            + select()
         }
 
         class Facile implements Strategy_mode {
-
+            + select()
         }
 
         class Classique implements Strategy_mode {
-
+            + select()
         }
 
         class Numerique implements Strategy_mode {
-
+            + select()
         }
 
         enum Pions {
@@ -80,29 +85,21 @@ package Mastermind {
         }
 
         class Mode_factory {
+            + createMode(type: String): Strategy_mode
+        }
 
+        class Settings {
+            - nb_manches: Integer
+            - nb_pions_combinaison: Integer
+            - nb_tentatives: Integer
+            - nb_pions: Integer
+            + <<create>> Settings()
+            + get_nb_manches(): Integer
+            + get_nb_pions_combinaison(): Integer
+            + get_nb_tentatives(): Integer
+            + get_nb_pions(): Integer
         }
     }
-
-    ' package view
-    ' {
-    '     class Start_screen {
-
-    '     }
-    '     class Game_screen {
-
-    '     }
-    '     class End_screen {
-
-    '     }
-    ' }
-
-    ' package controller
-    ' {
-    '     class Setting {
-
-    '     }
-    ' }
 
     class Mastermind_app {
         + {static} main(args: String[])
@@ -111,25 +108,25 @@ package Mastermind {
 
 ' Liens
 Partie --> "*\n -_manches" Manche: > est composé de
-Indice --> "*\n -_indices" Ligne_indice: > est composé de
-Manche -> "*\n -_indices" Indice: > est composé de
-Manche -> "*\n -_tentatives" Combinaison: > est composé de
-Manche -> "1\n -_combinaison_secrete" Combinaison: > est composé de
-Combinaison o--> "*\n -_combinaison" Pions: > est composé de
+Ligne_Indices --> "*\n -_indices" Indice: > est composé de
+Manche -> "*\n -_indices" Ligne_Indices: > est composé de
+Manche --> "*\n -_tentatives" Combinaison: > est composé de
+Manche --> "1\n -_combinaison_secrete" Combinaison: > est composé de
+Combinaison o--> "*\n -_pions" Pions: > est composé de
+Ligne_Indices --> "1\n -_combinaison_secrete" Combinaison: > possède
 
 Mastermind_app --> "1\n -_partie" Partie: > lance
-Partie o-> "1\n-_mode" Strategy_mode : select 
+Partie o-> "1\n-_mode" Strategy_mode : > select 
 Mastermind_app ..> Strategy_mode : <<uses>>
 Mode_factory ..> Facile: <<use>>
 Mode_factory ..> Classique: <<use>>
 Mode_factory ..> Numerique: <<use>>
 Mode_factory ..> Strategy_mode: <<use>>
 
-' Notes
-note top of Partie
-pions : [4,8,12]
-nb_manches : [3,5]
-nb_pions_combinaison : [4,6]
-nb_manches : [10,12]
-end note
+' Note top of Settings
+' nb_manches : [3,5]
+' nb_pions_combinaison : [4,6]
+' nb_tentatives : [10,12]
+' nb_pions : [4,8,12]
+
 @enduml
