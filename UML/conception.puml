@@ -11,49 +11,49 @@ package Mastermind {
     package model
     {
         class Partie {
-            - score : Integer
+            - player : string
             - nb_manches : Integer
             - nb_pions_combinaison : Integer
-            - nb_tentatives : Integer
+            - max_tentatives : Integer
             - nb_pions : Integer
-            ' - combinaison_secrete : Combinaison
             + <<create>> Partie()
-            + start_partie()
-            + end_partie()
+            + debut_partie()
+            + fin_partie()
         }
 
         class Manche {
-            - nombre_max_tentatives: Integer
+            - numTentative: Integer
             + <<create>> Manche()
             + ajouter_tentative(tentative: Combinaison)
-            + verifier_tentative(tentative: Combinaison): Ligne_Indices[*]
             + verifier_fin_manche(): Boolean
+            + est_gagne() : Boolean
+            + est_depasse() : Boolean
+            + fin_manche()
         }
 
         class Score {
-            - score_manche_actuelle: Integer
+            - score_manche: Integer[*]
             - score_total: Integer
             + <<create>> Score()
-            + calculer_score_manche(tentative: Combinaison)
+            + calculer_score_manche(indices : LigneIndice, mode : Strategy_mode)
             + calculer_score_total(): Integer
         }
 
         class Ligne_Indices {
             + <<create>> Ligne_Indices()
-            + get_nb_bonne_position(): Integer
-            + get_nb_bonne_couleur(): Integer
+            + est_positioncouleur(): Boolean
+            + est_couleur(): Boolean
         }
 
-        class Indice {
-            - state: Integer 
-            ' 0: non trouvé, 1: bonne couleur, 2: bien placé
-            + verifier_position(): Integer
-            + verifier_couleur(): Integer
+        enum Indice {
+            +POSITIONCOULEUR
+            +COULEUR
+            +ABSENT
         }
 
         class Combinaison {
             + <<create>> Combinaison()
-            + generer_combinaison_secrete(): Combinaison
+            + {static}generer_combinaison_secrete(): Combinaison
             + verifier_correspondance(tentative: Combinaison): Ligne_Indices
         }
 
@@ -61,6 +61,27 @@ package Mastermind {
             + select()
         }
 
+        enum Pions {
+            +ROUGE
+            +BLEU
+            +VERT
+            +JAUNE
+            +ORANGE
+            +VIOLET
+            +BLANC
+            +NOIR
+        }
+
+        class Mode_factory {
+            + createMode(type: String): Strategy_mode
+        }
+    }
+
+    class Mastermind_app {
+        + {static} main(args: String[])
+    }
+    package view
+    {
         class Facile implements Strategy_mode {
             + select()
         }
@@ -72,22 +93,9 @@ package Mastermind {
         class Numerique implements Strategy_mode {
             + select()
         }
-
-        enum Pions {
-            ROUGE
-            BLEU
-            VERT
-            JAUNE
-            ORANGE
-            VIOLET
-            BLANC
-            NOIR
-        }
-
-        class Mode_factory {
-            + createMode(type: String): Strategy_mode
-        }
-
+    }
+    package controller
+    {
         class Settings {
             - nb_manches: Integer
             - nb_pions_combinaison: Integer
@@ -100,19 +108,15 @@ package Mastermind {
             + get_nb_pions(): Integer
         }
     }
-
-    class Mastermind_app {
-        + {static} main(args: String[])
-    }
 }
 
 ' Liens
-Partie --> "*\n -_manches" Manche: > est composé de
+Partie *--> "3..5\n -_manches" Manche: > est composé de
 Ligne_Indices --> "*\n -_indices" Indice: > est composé de
-Manche -> "*\n -_indices" Ligne_Indices: > est composé de
-Manche --> "*\n -_tentatives" Combinaison: > est composé de
-Manche --> "1\n -_combinaison_secrete" Combinaison: > est composé de
-Combinaison o--> "*\n -_pions" Pions: > est composé de
+Manche *-> "*\n -_indices" Ligne_Indices: > est composé de
+Manche *--> "10..12\n -_tentatives" Combinaison: > est composé de
+Manche *--> "1\n -_combinaison_secrete" Combinaison: > est composé de
+Combinaison o--> "4..6\n -_pions" Pions: > est composé de
 Ligne_Indices --> "1\n -_combinaison_secrete" Combinaison: > possède
 
 Mastermind_app --> "1\n -_partie" Partie: > lance
@@ -123,10 +127,8 @@ Mode_factory ..> Classique: <<use>>
 Mode_factory ..> Numerique: <<use>>
 Mode_factory ..> Strategy_mode: <<use>>
 
-' Note top of Settings
-' nb_manches : [3,5]
-' nb_pions_combinaison : [4,6]
-' nb_tentatives : [10,12]
+Partie *-> "1\n-_score" Score
+
 ' nb_pions : [4,8,12]
 
 @enduml
