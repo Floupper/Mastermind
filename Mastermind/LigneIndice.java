@@ -7,12 +7,9 @@ public class LigneIndice {
     // private int _nbPionsBienPlaces;
     // private int _nbPionsMalPlaces;
     private ArrayList<Indice> _indices;
-    // private ArrayList<Pions> _combinaisonJoueur;
 
     public LigneIndice() {
         _indices = new ArrayList<Indice>();
-        // _combinaisonJoueur = combinaisonJoueur;
-        // _indices = combinaisonJoueur.verifierCorrespondance(combinaisonJoueur);
     }
 
     public ArrayList<Indice> getIndices() {

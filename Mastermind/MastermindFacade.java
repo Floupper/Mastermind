@@ -66,6 +66,7 @@ public class MastermindFacade {
             Scanner scanner2 = new Scanner(System.in);
             manche._combinaisonJoueurTest.addCombinaisonJoueur(scanner2.nextLine());
             manche.affichageCombinaisonJoueur();
+            manche.affichageIndices();
 
             // boucle des tentatives
 

@@ -7,13 +7,15 @@ public class Manche {
     private Combinaison _combinaisonSecrete;
     private ArrayList<Combinaison> _combinaisonJoueur;
     private int numTentative;
-    protected Combinaison _combinaisonJoueurTest;
+    protected static Combinaison _combinaisonJoueurTest;
+    private LigneIndice ligneIndice;
 
     public Manche() {
         this._indices = new ArrayList<LigneIndice>();
         this._combinaisonSecrete = new Combinaison();
         this._combinaisonSecrete.getCombinaisonSecrete();
         this._combinaisonJoueur = new ArrayList<Combinaison>();
+        this.ligneIndice = new LigneIndice();
         _combinaisonJoueurTest = new Combinaison();
         this.numTentative = 0;
     }
@@ -24,6 +26,21 @@ public class Manche {
 
     public void affichageCombinaisonJoueur() {
         System.out.println("Combinaison joueur : " + _combinaisonJoueurTest.getCombinaisonJoueur());
+    }
+
+    public void affichageIndices() {
+        ArrayList<Indice> ligneindice = _combinaisonJoueurTest
+                .verifierCorrespondance(_combinaisonJoueurTest.getCombinaisonJoueur());
+        for (Indice indice : ligneindice) {
+            ligneIndice.setIndices(indice);
+        }
+        String afficheIndice = "Indices : \t [";
+        for (Indice indice : ligneindice) {
+            afficheIndice += indice + ", ";
+        }
+        afficheIndice = afficheIndice.substring(0, afficheIndice.length() - 2);
+        afficheIndice += "]";
+        System.out.println(afficheIndice);
     }
 
     public boolean estGagne(int nbPionsCombinaison) {
