@@ -64,7 +64,7 @@ public class MastermindFacade {
                             + " " + Pions.ORANGE + " " + Pions.VIOLET + " " + Pions.BLANC + " " + Pions.NOIR);
 
             Scanner scanner2 = new Scanner(System.in);
-            manche._combinaisonJoueurTest.addCombinaisonJoueur(scanner2.nextLine());
+            manche._combinaisonsJoueurTest.addCombinaisonJoueur(scanner2.nextLine());
             manche.affichageCombinaisonJoueur();
             manche.affichageIndices();
 
