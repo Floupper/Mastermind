@@ -5,18 +5,18 @@ import java.util.ArrayList;
 public class Manche {
     protected static ArrayList<LigneIndice> _indices;
     private Combinaison _combinaisonSecrete;
-    private ArrayList<Combinaison> _combinaisonJoueur;
+    private ArrayList<Combinaison> _combinaisonsJoueur;
     private int numTentative;
-    protected static Combinaison _combinaisonJoueurTest;
+    protected static Combinaison _combinaisonsJoueurTest;
     private LigneIndice ligneIndice;
 
     public Manche() {
         this._indices = new ArrayList<LigneIndice>();
         this._combinaisonSecrete = new Combinaison();
         this._combinaisonSecrete.getCombinaisonSecrete();
-        this._combinaisonJoueur = new ArrayList<Combinaison>();
+        this._combinaisonsJoueur = new ArrayList<Combinaison>();
         this.ligneIndice = new LigneIndice();
-        _combinaisonJoueurTest = new Combinaison();
+        _combinaisonsJoueurTest = new Combinaison();
         this.numTentative = 0;
     }
 
@@ -25,12 +25,12 @@ public class Manche {
     }
 
     public void affichageCombinaisonJoueur() {
-        System.out.println("Combinaison joueur : " + _combinaisonJoueurTest.getCombinaisonJoueur());
+        System.out.println("Combinaison joueur : " + _combinaisonsJoueurTest.getCombinaisonJoueur());
     }
 
     public void affichageIndices() {
-        ArrayList<Indice> ligneindice = _combinaisonJoueurTest
-                .verifierCorrespondance(_combinaisonJoueurTest.getCombinaisonJoueur());
+        ArrayList<Indice> ligneindice = _combinaisonsJoueurTest
+                .verifierCorrespondance(_combinaisonsJoueurTest.getCombinaisonJoueur());
         for (Indice indice : ligneindice) {
             ligneIndice.setIndices(indice);
         }
@@ -73,7 +73,7 @@ public class Manche {
     }
 
     public void ajouterTentative(Combinaison tentative) {
-        this._combinaisonJoueur.add(tentative);
+        this._combinaisonsJoueur.add(tentative);
         this.numTentative++;
     }
 }

@@ -23,15 +23,15 @@ package Mastermind
     {
         class MastermindFacade {
             + <<create>> MastermindFacade()
-            + lancerJeu()
+            + lancerPartie()
         }
 
         class Partie {
-            - Joueur : String
-            - NbManches : Integer
-            - NbPionsCombinaison : Integer
-            - maxTentatives : Integer
-            - nbPions : Integer
+            - joueur: String
+            # {static} nbManche: Integer
+            # {static} nbPionsCombinaison: Integer
+            # {static} maxTentatives: Integer
+            # {static} nbPions: Integer
             + <<create>> Partie()
             + debutPartie()
             + finPartie()
@@ -69,13 +69,21 @@ package Mastermind
         }
 
         class Combinaison {
+            - {static} _combinaisonSecrete: Pions[*]
+            - _combinaisonJoueur: Pions[*]
             + <<create>> Combinaison()
-            + {static}genererCombinaisonSecrete(): Combinaison
-            + verifierCorrespondance(tentative: Combinaison): Ligne_Indices
+            + {static} genererCombinaisonSecrete(): Pions[*]
+            + verifierCorrespondance(tentative: Pions[*]): Indice[*]
+            + {static} getCombinaisonSecrete(): Pions[*]
+            ° getCombinaisonJoueur(): Pions[*]
+            + setCombinaisonJoueur(combinaisonJoueur: Pions)
+            + addCombinaisonJoueur(choix: String)
         }
 
         class LigneIndices {
             + <<create>> LigneIndices()
+            + getIndices(): Indice[*]
+            + setIndices(indices: Indice)
             + estPositionCouleur(): Boolean
             + estCouleur(): Boolean
             + getNbPositionCouleur() : int
