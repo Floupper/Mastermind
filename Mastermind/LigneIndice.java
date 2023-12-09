@@ -7,9 +7,12 @@ public class LigneIndice {
     // private int _nbPionsBienPlaces;
     // private int _nbPionsMalPlaces;
     private ArrayList<Indice> _indices;
+    // private ArrayList<Pions> _combinaisonJoueur;
 
     public LigneIndice() {
         _indices = new ArrayList<Indice>();
+        // _combinaisonJoueur = combinaisonJoueur;
+        // _indices = combinaisonJoueur.verifierCorrespondance(combinaisonJoueur);
     }
 
     public ArrayList<Indice> getIndices() {
@@ -20,25 +23,20 @@ public class LigneIndice {
         _indices.add(indices);
     }
 
-    public int getNbPositionCouleur()
-    {
+    public int getNbPositionCouleur() {
         int NbPositionCouleur = 0;
-        for(Indice indice : this._indices)
-        {
-            if(indice == Indice.BIEN_PLACE)
-            {
+        for (Indice indice : this._indices) {
+            if (indice == Indice.BIEN_PLACE) {
                 NbPositionCouleur++;
             }
         }
         return NbPositionCouleur;
     }
-    public int getNbCouleur()
-    {
+
+    public int getNbCouleur() {
         int NbCouleur = 0;
-        for(Indice indice : this._indices)
-        {
-            if(indice == Indice.MAL_PLACE)
-            {
+        for (Indice indice : this._indices) {
+            if (indice == Indice.MAL_PLACE) {
                 NbCouleur++;
             }
         }
