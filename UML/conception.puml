@@ -36,14 +36,26 @@ package Mastermind
             + debutPartie()
             + finPartie()
             + setMode(mode : StrategyMode)
+            + setNbManches(nbManches : Integer)
+            + setNbPionCombinaison(NbPionsCombinaison : Integer)
+            + setMaxTentatives(maxTentatives : Integer)
+            + setNbPions(nbPions : Integer)
+            + getMode() : StrategyMode
+            + getNbManches() : Integer
+            + getNbPionCombinaison() : Integer
+            + getMaxTentatives() : Integer
+            + getNbPions() : Integer
         }
 
         class Score {
-            - scoreManche: Integer[*]
+            - scoreManches: Integer[*]
             - scoreTotal: Integer
             + <<create>> Score()
-            + calculerScoreManche(indices : LigneIndice, mode : StrategyMode)
+            + calculerScoreManche(indices : LigneIndice, mode : StrategyMode) : Integer
             + calculerScoreTotal(): Integer
+            + getScoreManche(numManche : Integer) : Integer
+            + getScoreManches() : Integer[*]
+            + getScoreTotal() : Integer
         }
 
         class Manche {
@@ -66,10 +78,8 @@ package Mastermind
             + <<create>> LigneIndices()
             + estPositionCouleur(): Boolean
             + estCouleur(): Boolean
-        }
-
-        interface StrategyMode {
-            + select()
+            + getNbPositionCouleur() : int
+            + getNbCouleur() : int
         }
 
         class ModeFactory {
@@ -102,6 +112,9 @@ package Mastermind
     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
     package view
     {
+        interface StrategyMode {
+            + select()
+        }
         class Facile implements StrategyMode {
             + select()
         }

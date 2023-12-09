@@ -19,4 +19,29 @@ public class LigneIndice {
     public void setIndices(Indice indices) {
         _indices.add(indices);
     }
+
+    public int getNbPositionCouleur()
+    {
+        int NbPositionCouleur = 0;
+        for(Indice indice : this._indices)
+        {
+            if(indice == Indice.BIEN_PLACE)
+            {
+                NbPositionCouleur++;
+            }
+        }
+        return NbPositionCouleur;
+    }
+    public int getNbCouleur()
+    {
+        int NbCouleur = 0;
+        for(Indice indice : this._indices)
+        {
+            if(indice == Indice.MAL_PLACE)
+            {
+                NbCouleur++;
+            }
+        }
+        return NbCouleur;
+    }
 }
