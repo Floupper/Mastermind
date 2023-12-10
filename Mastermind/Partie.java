@@ -5,10 +5,10 @@ public class Partie {
     private Score _score;
     private StrategyMode mode;
     private Manche _manches;
-    protected static int nbManche = 3;// suppr les val de base
-    protected static int nbPionsCombinaison = 4;// suppr les val de base
-    protected static int maxTentatives = 10;// suppr les val de base
-    protected static int nbPions = 8;// suppr les val de base
+    protected static int nbManche;
+    protected static int nbPionsCombinaison;
+    protected static int maxTentatives;
+    protected static int nbPions;
 
     public Partie() {
         this.nbManche = 3;
@@ -47,6 +47,9 @@ public class Partie {
         return this.nbManche;
     }
 
+    public Score getScore() {
+        return this._score;
+    }
     public int getNbPionCombinaison() {
         return this.nbPionsCombinaison;
     }
