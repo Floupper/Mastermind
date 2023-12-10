@@ -5,16 +5,22 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Combinaison {
-
-    private static ArrayList<Pions> _combinaisonSecrete;
     private ArrayList<Pions> _combinaisonJoueur;
-
-    public Combinaison() {
-        _combinaisonSecrete = new ArrayList<Pions>();
-        _combinaisonSecrete = genererCombinaisonSecrete();
-        _combinaisonJoueur = new ArrayList<Pions>();
+    private static ArrayList<Pions> _combinaisonSecrete;
+    public Combinaison(int flag) {
+        if(flag == 0){
+            _combinaisonJoueur = new ArrayList<Pions>();
+        }
+        else
+        {
+            _combinaisonSecrete = new ArrayList<Pions>();
+            _combinaisonSecrete = genererCombinaisonSecrete();//pas de regène
+        }
     }
 
+    public void setCombinaisonJoueur(Pions combinaisonJoueur) {
+        _combinaisonJoueur.add(combinaisonJoueur);
+    }
     public static ArrayList<Pions> genererCombinaisonSecrete() { // static
         Random random = new Random();
         int i = 0;
@@ -52,7 +58,14 @@ public class Combinaison {
         }
         return _combinaisonSecrete;
     }
+    public void addCombinaisonJoueur(String choix) {
+        choix = choix.toUpperCase();
+        String[] couleur1 = choix.split(" ");
 
+        for (String string : couleur1) {
+            setCombinaisonJoueur(Pions.valueOf(string));
+        }
+    }
     public ArrayList<Indice> verifierCorrespondance(ArrayList<Pions> tentative) {
         LigneIndice ligneIndice = new LigneIndice();
         for (Pions pions : tentative) {
@@ -69,25 +82,13 @@ public class Combinaison {
 
         return ligneIndice.getIndices();
     }
-
     public static ArrayList<Pions> getCombinaisonSecrete() {
         return _combinaisonSecrete;
     }
-
     public ArrayList<Pions> getCombinaisonJoueur() {
         return _combinaisonJoueur;
     }
 
-    public void setCombinaisonJoueur(Pions combinaisonJoueur) {
-        _combinaisonJoueur.add(combinaisonJoueur);
-    }
 
-    public void addCombinaisonJoueur(String choix) {
-        choix = choix.toUpperCase();
-        String[] couleur1 = choix.split(" ");
 
-        for (String string : couleur1) {
-            setCombinaisonJoueur(Pions.valueOf(string));
-        }
-    }
 }

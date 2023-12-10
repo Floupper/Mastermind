@@ -22,19 +22,19 @@ package Mastermind
     package model
     {
         class MastermindFacade {
-            + <<create>> MastermindFacade()
             + lancerPartie()
         }
 
         class Partie {
             - joueur: String
+            - _score: Score
+            - mode: StrategyMode
+            - _manche: Manche
             # {static} nbManche: Integer
             # {static} nbPionsCombinaison: Integer
             # {static} maxTentatives: Integer
             # {static} nbPions: Integer
             + <<create>> Partie()
-            + debutPartie()
-            + finPartie()
             + setMode(mode : StrategyMode)
             + setNbManches(nbManches : Integer)
             + setNbPionCombinaison(NbPionsCombinaison : Integer)
@@ -59,33 +59,45 @@ package Mastermind
         }
 
         class Manche {
+            - _indices: LigneIndice[*]
+            - _combinaisonSecrete: Combinaison
+            - _combinaisonsJoueur: Combinaison[*]
             - numTentative: Integer
+            # {static} _combinaisonsJoueurTest: Combinaison
+            - _ligneIndice: LigneIndice
             + <<create>> Manche()
+            + setLigneIndice()
+            + unsetCombinaisonJoueur()
+            + unsetLigneIndice()
             + ajouterTentative(tentative: Combinaison)
-            + verifierFinManche(): Boolean
-            + estGagne() : Boolean
-            + estDepasse() : Boolean
-            + finManche()
+            + getIndices(): LigneIndice[*]
+            + getCombinaisonsJoueur(): Combinaison[*]
+            + getNumTentative() : Integer
+            + affichageCombinaisonSecrete()
+            + affichageCombinaisonJoueur()
+            + affichageIndices()
+            + estGagne(NbPionsCombinaison : Integer) : Boolean
+            + estDepasse(maxTentatives : Integer) : Boolean
+            + verifierFinManche(NbPionsCombinaison : Integer, maxTentatives : Integer): Boolean
         }
 
         class Combinaison {
-            - {static} _combinaisonSecrete: Pions[*]
             - _combinaisonJoueur: Pions[*]
-            + <<create>> Combinaison()
+            - {static} _combinaisonSecrete: Pions[*]
+            + <<create>> Combinaison(flag: int)
+            + setCombinaisonJoueur(combinaisonJoueur: Pions)
             + {static} genererCombinaisonSecrete(): Pions[*]
+            + addCombinaisonJoueur(choix: String)
             + verifierCorrespondance(tentative: Pions[*]): Indice[*]
             + {static} getCombinaisonSecrete(): Pions[*]
             ° getCombinaisonJoueur(): Pions[*]
-            + setCombinaisonJoueur(combinaisonJoueur: Pions)
-            + addCombinaisonJoueur(choix: String)
         }
 
         class LigneIndices {
+            - _indices: Indice[*]
             + <<create>> LigneIndices()
-            + getIndices(): Indice[*]
             + setIndices(indices: Indice)
-            + estPositionCouleur(): Boolean
-            + estCouleur(): Boolean
+            + getIndices(): Indice[*]
             + getNbPositionCouleur() : int
             + getNbCouleur() : int
         }

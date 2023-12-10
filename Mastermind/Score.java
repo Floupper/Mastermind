@@ -24,6 +24,7 @@ public class Score {
                     break;
                 case BIEN_PLACE:
                     score += 3;
+                    break;
             }
         }
         //ajouter 4 si mode == classique
@@ -44,7 +45,7 @@ public class Score {
 
     public int getScoreManche(Integer numManche)
     {
-        return this.scoreManches.get(numManche);//! si numManche commence à 1
+        return this.scoreManches.get(numManche);
     }
 
     public ArrayList<Integer> getScoreManches()
