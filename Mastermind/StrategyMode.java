@@ -1,4 +1,4 @@
 package Mastermind;
 
-public class StrategyMode {
+public interface StrategyMode {
 }
