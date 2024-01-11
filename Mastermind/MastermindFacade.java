@@ -15,12 +15,10 @@ public class MastermindFacade {
         Scanner scanner2 = new Scanner(System.in);
         Partie partie = new Partie();
 
-
-
         /****************************************
          * paramètres
          ***************************************/
-        //choix des paramètres par l'utilisateur
+        // choix des paramètres par l'utilisateur
         System.out.println(
                 "========================================================\nParamètres : \n========================================================");
         System.out.println("Nombre de Manches : ");
@@ -32,7 +30,7 @@ public class MastermindFacade {
         System.out.println("Nombre de pions différent : ");
         nbPions = scanner.nextInt();
 
-        //vérification des paramètres
+        // vérification des paramètres
         if (3 <= nbManche && nbManche <= 5) {
             partie.setNbManches(nbManche);
         } else {
@@ -54,14 +52,12 @@ public class MastermindFacade {
             System.out.println("Nombre de pions différents incorrect, valeur par défaut : 8");
         }
 
-        //affichage des paramètres
+        // affichage des paramètres
         System.out.println(
                 "========================================================\nRésumé paramètres : \n========================================================");
         System.out.println("nombre de manches : " + partie.getNbManches() + "\nnombre de pions par combinaison : "
                 + partie.getNbPionCombinaison() + "\nnombre de tentatives : " + partie.getMaxTentatives()
                 + "\nnombre de pions différents : " + partie.getNbPions());
-
-
 
         /****************************************
          * les manches
@@ -75,10 +71,12 @@ public class MastermindFacade {
              * les tentatives
              ***************************************/
             while (!manche.verifierFinManche(partie.getMaxTentatives(), partie.getNbPionCombinaison())) {
-                System.out.println("========================================================\ntentative " + (manche.getNumTentative() + 1)
+                System.out.println("========================================================\ntentative "
+                        + (manche.getNumTentative() + 1)
                         + " : \n========================================================");
                 System.out.println("Entrer une combinaison : ");
-                System.out.println("Pions dispobible : " + Pions.ROUGE + " " + Pions.BLEU + " " + Pions.VERT + " " + Pions.JAUNE + " " + Pions.ORANGE + " " +
+                System.out.println("Pions dispobible : " + Pions.ROUGE + " " + Pions.BLEU + " " + Pions.VERT + " "
+                        + Pions.JAUNE + " " + Pions.ORANGE + " " +
                         Pions.VIOLET + " " + Pions.BLANC + " " + Pions.NOIR);
                 manche.unsetCombinaisonJoueur();
                 manche.unsetLigneIndice();
@@ -86,14 +84,15 @@ public class MastermindFacade {
                 manche._combinaisonsJoueurTest.addCombinaisonJoueur(scanner2.nextLine());
                 manche.ajouterTentative(combinaison);
                 manche.setLigneIndice();
-                /*manche.affichageCombinaisonSecrete();*/
+                /* manche.affichageCombinaisonSecrete(); */
                 manche.affichageCombinaisonJoueur();
                 manche.affichageIndices();
             }
             /****************************************
              * les scores
              ***************************************/
-            partie.getScore().calculerScoreManche(manche.getIndices().get(manche.getNumTentative()-1), new StrategyMode());
+            partie.getScore().calculerScoreManche(manche.getIndices().get(manche.getNumTentative() - 1),
+                    new StrategyMode());
             partie.getScore().calculerScoreTotal();
             System.out.println("score de la manche : " + partie.getScore().getScoreManche(i));
         }
