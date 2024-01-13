@@ -1,0 +1,111 @@
+package Mastermind;
+
+import java.awt.CardLayout;
+
+import javax.swing.*;
+
+public class EcranParametres extends JFrame {
+    // Pour transmettre la valeur de chaque paramètres choisis par l'utilisateur
+    private int spnNbMancheValue;
+    private int spnPionsCombinaisonValue;
+    private int spnNbTentativesValue;
+    private int spnPionsDifferentValue;
+    private String nomJoueur;
+
+    JSpinner spnNbManche;
+    JSpinner spnPionsCombinaison;
+    JSpinner spnNbTentatives;
+    JSpinner spnPionsDifferent;
+    JTextField txtNom;
+
+    public EcranParametres() {
+        // définition de la page
+        super("ACKERMANN HARTZ - Mastermind");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(1000, 600);
+        setLocationRelativeTo(null);
+        setResizable(false);
+
+        // définition des éléments de la page
+        JLabel lblNbManche = new JLabel("Nombre de manche");
+        SpinnerModel smdNbManche = new SpinnerNumberModel(3, 1, 5, 1);
+        spnNbManche = new JSpinner(smdNbManche);
+
+        JLabel lblPionsCombinaison = new JLabel("Nombre de pions par combinaison");
+        SpinnerModel smdPionsCombinaison = new SpinnerNumberModel(4, 2, 6, 1);
+        spnPionsCombinaison = new JSpinner(smdPionsCombinaison);
+
+        JLabel lblNbTentatives = new JLabel("Nombre de tentatives par manche");
+        SpinnerModel smdNbTentatives = new SpinnerNumberModel(10, 2, 12, 1);
+        spnNbTentatives = new JSpinner(smdNbTentatives);
+
+        JLabel lblPionsDifferent = new JLabel("Nombre de pions possible par combinaison");
+        SpinnerModel smdPionsDifferent = new SpinnerNumberModel(8, 4, 8, 1);
+        spnPionsDifferent = new JSpinner(smdPionsDifferent);
+
+        // Pour choisir la difficulté (Facile, Classique, Normale)
+        // JLabel lblDifficulte = new JLabel("Difficulté");
+        // CardLayout cardLayout = new CardLayout();
+
+        JLabel lblNom = new JLabel("entrez votre nom");
+        txtNom = new JTextField();
+
+        JButton btnValider = new JButton("valider");
+        btnValider.addActionListener(e -> {
+            System.out.println("Nombre de manche : " + spnNbManche.getValue());
+            spnNbMancheValue = (int) spnNbManche.getValue();
+            System.out.println("Nombre de pions par combinaison : " + spnPionsCombinaison.getValue());
+            spnPionsCombinaisonValue = (int) spnPionsCombinaison.getValue();
+            System.out.println("Nombre de tentatives par manche : " + spnNbTentatives.getValue());
+            spnNbTentativesValue = (int) spnNbTentatives.getValue();
+            System.out.println("Nombre de pions possible par combinaison : " + spnPionsDifferent.getValue());
+            spnPionsDifferentValue = (int) spnPionsDifferent.getValue();
+            System.out.println("Nom : " + txtNom.getText());
+            nomJoueur = txtNom.getText();
+            new Facile();
+            dispose();
+        });
+        btnValider.setAlignmentX(CENTER_ALIGNMENT);
+        btnValider.setAlignmentY(CENTER_ALIGNMENT);
+
+        // panel global
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+
+        panel.add(lblNbManche);
+        panel.add(spnNbManche);
+        panel.add(lblPionsCombinaison);
+        panel.add(spnPionsCombinaison);
+        panel.add(lblNbTentatives);
+        panel.add(spnNbTentatives);
+        panel.add(lblPionsDifferent);
+        panel.add(spnPionsDifferent);
+        // panel.add(lblDifficulte);
+        panel.add(lblNom);
+        panel.add(txtNom);
+        panel.add(btnValider);
+
+        setContentPane(panel);
+        setVisible(true);
+    }
+
+    public int getSpnNbManche() {
+        return spnNbMancheValue;
+    }
+
+    public int getSpnPionsCombinaison() {
+        return spnPionsCombinaisonValue;
+    }
+
+    public int getSpnNbTentatives() {
+        return spnNbTentativesValue;
+    }
+
+    public int getSpnPionsDifferent() {
+        return spnPionsDifferentValue;
+    }
+
+    public String getTxtNom() {
+        return nomJoueur;
+    }
+}
