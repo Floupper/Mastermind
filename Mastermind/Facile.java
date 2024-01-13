@@ -49,10 +49,8 @@ public class Facile extends JFrame {
         panel.setLayout(new BorderLayout());
         panel.add(informations, BorderLayout.PAGE_START);
         panel.revalidate();
-
         panel.add(tentatives, BorderLayout.CENTER);
         panel.revalidate();
-
         panel.add(indices, BorderLayout.LINE_END);
         panel.revalidate();
         panel.add(pions, BorderLayout.PAGE_END);

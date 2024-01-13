@@ -91,8 +91,8 @@ public class MastermindFacade {
             /****************************************
              * les scores
              ***************************************/
-            partie.getScore().calculerScoreManche(manche.getIndices().get(manche.getNumTentative() - 1),
-                    new StrategyMode());
+            /*partie.getScore().calculerScoreManche(manche.getIndices().get(manche.getNumTentative() - 1),
+                    new StrategyMode());*/
             partie.getScore().calculerScoreTotal();
             System.out.println("score de la manche : " + partie.getScore().getScoreManche(i));
         }

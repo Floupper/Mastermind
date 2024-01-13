@@ -10,52 +10,42 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class EcranDemarrage extends JFrame {
-    private JButton lancerJouer;
-    private JButton lancerCredits;
+    private JButton btnJouer;
+    private JButton btnCredits;
     private JPanel menu;
-    private JPanel jouer;
-    private JPanel credits;
-
     public EcranDemarrage() {
+        //définition de la page
         super("ACKERMANN HARTZ - Mastermind");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1000, 600);
         setLocationRelativeTo(null);
         setResizable(false);
 
-        jouer = new JPanel();
-        JLabel test = new JLabel("Ceci lancera l'affichage du menu des paramètres");
-        jouer.setPreferredSize(new Dimension(600, 200));
-        jouer.add(test);
-        jouer.setVisible(false);
-
-        credits = new JPanel();
-        JLabel test2 = new JLabel("Ceci lancera l'affichage des crédits");
-        credits.setPreferredSize(new Dimension(600, 200));
-        credits.add(test2);
-        credits.setVisible(false);
-
-        lancerJouer = new JButton("Jouer");
-        lancerJouer.addActionListener(e -> {
-            menu.setVisible(false);
-            jouer.setVisible(true);
+        //boutton pour jouer
+        btnJouer = new JButton("Jouer");
+        btnJouer.addActionListener(e -> {
+            new WindowSettings();
+            dispose();
         });
 
-        lancerCredits = new JButton("Crédits");
-        lancerCredits.addActionListener(e -> {
-            menu.setVisible(false);
-            credits.setVisible(true);
+        //boutton pour voir les crédits
+        btnCredits = new JButton("Crédits");
+        btnCredits.addActionListener(e -> {
+
         });
 
+        //page du menu
         menu = new JPanel();
         menu.setLayout(new BoxLayout(menu, BoxLayout.Y_AXIS));
         menu.add(Box.createVerticalGlue());
         menu.add(Box.createHorizontalGlue());
-        menu.add(lancerJouer);
-        menu.add(lancerCredits);
+
+        menu.add(btnJouer);
+        menu.add(btnCredits);
         menu.add(Box.createHorizontalGlue());
         menu.add(Box.createVerticalGlue());
 
+        //affichage de la page de base
         setContentPane(menu);
         setVisible(true);
     }
