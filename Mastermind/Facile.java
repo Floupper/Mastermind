@@ -5,14 +5,10 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public class Facile extends JFrame {
+    private JPanel pnlInfo;
     private JPanel informations;
     private JPanel pions;
     private JPanel tentatives;
@@ -28,14 +24,12 @@ public class Facile extends JFrame {
     private JLabel noir;
     /* private JLabel suppr */
     private int position;
-
-    private EcranParametres parametres;
-    private String userName;
-    private int NbMancheUser;
-    private int PionsCombinaisonUser;
-    private int NbTentativesUser;
-    private int PionsDifferentUser;
-
+    private Partie partie;
+    private JLabel numManche;
+    private JLabel numTentative;
+    private int nbManche;
+    private ArrayList<String> tent = new ArrayList<String>();
+    private JLabel scoreTotal;
     public Facile(String nomJoueur, int spnNbMancheValue, int spnPionsCombinaisonValue, int spnNbTentativesValue,
             int spnPionsDifferentValue) {
         // définition de la page
@@ -46,17 +40,20 @@ public class Facile extends JFrame {
         setResizable(false);
         setVisible(true);
 
-        this.userName = nomJoueur;
-        this.NbMancheUser = spnNbMancheValue;
-        this.PionsCombinaisonUser = spnPionsCombinaisonValue;
-        this.NbTentativesUser = spnNbTentativesValue;
-        this.PionsDifferentUser = spnPionsDifferentValue;
+        this.partie = new Partie();
+        partie.setJoueur(nomJoueur);
+        partie.setNbManches(spnNbMancheValue);
+        partie.setNbPionCombinaison(spnPionsCombinaisonValue);
+        partie.setMaxTentatives(spnNbTentativesValue);
+        partie.setNbPions(spnPionsDifferentValue);
+        this.nbManche = 1;
 
         informations = setInfo();
         pions = setPions();
         tentative = setTentative();
         tentatives = setTentatives();
         indices = setIndices();
+
 
         // définition du panel global
         JPanel panel = new JPanel();
@@ -75,11 +72,11 @@ public class Facile extends JFrame {
 
     public JPanel setInfo() {
         // définition du panel avec les informations sur le jeu
-        JPanel pnlInfo = new JPanel();
+        this.pnlInfo = new JPanel();
         pnlInfo.setLayout(new GridLayout());
         pnlInfo.add(setJoueur());
         pnlInfo.add(setNumManche());
-        pnlInfo.add(setScoreManche());
+        pnlInfo.add(setNbTentative());
         pnlInfo.add(setScoreTotal());
         return pnlInfo;
     }
@@ -87,33 +84,29 @@ public class Facile extends JFrame {
     public JLabel setJoueur() {
         // définition du joueur
         JLabel Joueur = new JLabel();
-        // String nomJoueur = "Joueur : " + parametres.getTxtNom();
-        // Joueur.setText(nomJoueur);
-        Joueur.setText("Joueur : " + userName);
+        Joueur.setText("Joueur : " + partie.getJoueur());
         return Joueur;
     }
 
     public JLabel setNumManche() {
         // définition du numéro de la manche
-        JLabel numManche = new JLabel();
-        // String numMancheValue = "Manche n°" + parametres.getSpnNbManche();
-        // numManche.setText(numMancheValue);
-        numManche.setText("Manche n°1");
+        this.numManche = new JLabel();
+        this.numManche.setText("Manche n°" + this.nbManche);
         return numManche;
     }
 
-    public JLabel setScoreManche() {
+    public JLabel setNbTentative() {
         // défintion du score de la manche
-        JLabel scoreManche = new JLabel();
-        scoreManche.setText("Score de la manche : 25");
-        return scoreManche;
+        this.numTentative = new JLabel();
+        this.numTentative.setText("tentative n°" + partie.get_manches().getNumTentative());
+        return numTentative;
     }
 
     public JLabel setScoreTotal() {
         // défintion du score total
-        JLabel scoreTotal = new JLabel();
-        scoreTotal.setText("Score Total : 100");
-        return scoreTotal;
+        this.scoreTotal = new JLabel();
+        this.scoreTotal.setText("Score Total : " + partie.getScore().getScoreTotal());
+        return this.scoreTotal;
     }
 
     public JPanel setPions() {
@@ -139,6 +132,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setRouge(), position);
                         tentative.revalidate();
+                        tent.add("rouge");
                         position++;
                         System.out.println("rouge");
                     }
@@ -146,6 +140,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setBleu(), position);
                         tentative.revalidate();
+                        tent.add("bleu");
                         position++;
                         System.out.println("bleu");
                     }
@@ -153,6 +148,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setVert(), position);
                         tentative.revalidate();
+                        tent.add("vert");
                         position++;
                         System.out.println("vert");
                     }
@@ -160,6 +156,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setJaune(), position);
                         tentative.revalidate();
+                        tent.add("jaune");
                         position++;
                         System.out.println("jaune");
                     }
@@ -167,6 +164,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setOrange(), position);
                         tentative.revalidate();
+                        tent.add("orange");
                         position++;
                         System.out.println("orange");
                     }
@@ -174,6 +172,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setViolet(), position);
                         tentative.revalidate();
+                        tent.add("violet");
                         position++;
                         System.out.println("violet");
                     }
@@ -181,6 +180,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setBlanc(), position);
                         tentative.revalidate();
+                        tent.add("blanc");
                         position++;
                         System.out.println("blanc");
                     }
@@ -188,6 +188,7 @@ public class Facile extends JFrame {
                         tentative.remove(position);
                         tentative.add(setNoir(), position);
                         tentative.revalidate();
+                        tent.add("noir");
                         position++;
                         System.out.println("noir");
                     }
@@ -241,25 +242,53 @@ public class Facile extends JFrame {
         JButton suppr = new JButton("Supprimer");
         suppr.addActionListener(actionEvent -> {
             for (int i = 0; i < 4; i++) {
-                position = 0;
                 tentative.remove(i);
                 tentative.add(setVide(), i);
                 tentative.revalidate();
             }
+            position = 0;
+            tent.clear();
             System.out.println("Supprimer");
         });
         pnlPions.add(suppr);
 
         JButton valider = new JButton("Valider");
         valider.addActionListener(actionEvent -> {
-            ArrayList<String> tent = new ArrayList<String>();
-            tent.add("bleu");
-            tent.add("blanc");
-            tent.add("rouge");
-            tent.add("noir");
-            addTentativePasser(tent);
-            tentatives.revalidate();
-            addIndice();
+            if (this.tent.size() == partie.getNbPionCombinaison())
+            {
+                String comb = "";
+                for(String pion : tent)
+                {
+                    comb += pion + " ";
+                }
+                partie.get_manches().unsetCombinaisonJoueur();
+                partie.get_manches().unsetLigneIndice();
+                Combinaison combinaison = new Combinaison(0);
+                partie.get_manches()._combinaisonsJoueurTest.addCombinaisonJoueur(comb);
+                partie.get_manches().ajouterTentative(combinaison);
+                partie.get_manches().setLigneIndice();
+
+                partie.get_manches().affichageCombinaisonJoueur();
+                partie.get_manches().affichageCombinaisonSecrete();
+                if(partie.get_manches().verifierFinManche(partie.getMaxTentatives(), partie.getNbPionCombinaison()))
+                {
+                    partie.getScore().calculerScoreManche(partie.get_manches().getIndices().get(partie.get_manches().getNumTentative() - 1));
+                    partie.getScore().calculerScoreTotal();
+                    this.scoreTotal.setText("Score Total : " + partie.getScore().getScoreTotal());
+                }
+                else {
+                    addTentativePasser();
+                    addIndice();
+                }
+                for (int i = 0; i < 4; i++) {
+                    tentative.remove(i);
+                    tentative.add(setVide(), i);
+                    tentative.revalidate();
+                }
+                position = 0;
+                tent.clear();
+                this.numTentative.setText("tentative n°" + partie.get_manches().getNumTentative());
+            }
             System.out.println("valider");
         });
         pnlPions.add(valider);
@@ -328,38 +357,38 @@ public class Facile extends JFrame {
 
     public JPanel setTentatives() {
         JPanel pnlTentatives = new JPanel();
-        pnlTentatives.setLayout(new GridLayout(NbTentativesUser, 1));
+        pnlTentatives.setLayout(new GridLayout(partie.getMaxTentatives(), 1));
         pnlTentatives.setBorder(BorderFactory.createLineBorder(Color.black));
         pnlTentatives.add(tentative);
         return pnlTentatives;
     }
 
-    public void addTentativePasser(ArrayList<String> tentative) {
+    public void addTentativePasser() {
         JPanel pnlTentative = new JPanel();
-        pnlTentative.setLayout(new GridLayout(1, PionsCombinaisonUser));
-        for (int i = 0; i < tentative.size(); i++) {
-            if (tentative.get(0) == "rouge") {
+        pnlTentative.setLayout(new GridLayout(1, partie.getNbPionCombinaison()));
+        for (int i = 0; i < tent.size(); i++) {
+            if (tent.get(i) == "rouge") {
                 pnlTentative.add(setRouge());
             }
-            if (tentative.get(0) == "bleu") {
+            if (tent.get(i) == "bleu") {
                 pnlTentative.add(setBleu());
             }
-            if (tentative.get(0) == "vert") {
+            if (tent.get(i) == "vert") {
                 pnlTentative.add(setVert());
             }
-            if (tentative.get(0) == "jaune") {
+            if (tent.get(i) == "jaune") {
                 pnlTentative.add(setJaune());
             }
-            if (tentative.get(0) == "orange") {
+            if (tent.get(i) == "orange") {
                 pnlTentative.add(setOrange());
             }
-            if (tentative.get(0) == "violet") {
+            if (tent.get(i) == "violet") {
                 pnlTentative.add(setViolet());
             }
-            if (tentative.get(0) == "blanc") {
+            if (tent.get(i) == "blanc") {
                 pnlTentative.add(setBlanc());
             }
-            if (tentative.get(0) == "noir") {
+            if (tent.get(i) == "noir") {
                 pnlTentative.add(setNoir());
             }
         }
@@ -370,8 +399,8 @@ public class Facile extends JFrame {
         // définition du panel pour une tentative
         position = 0;
         JPanel tentative = new JPanel();
-        tentative.setLayout(new GridLayout(1, PionsCombinaisonUser));
-        for (int i = 0; i < PionsCombinaisonUser; i++) {
+        tentative.setLayout(new GridLayout(1, partie.getNbPionCombinaison()));
+        for (int i = 0; i < partie.getNbPionCombinaison(); i++) {
             tentative.add(setVide());
         }
         return tentative;
@@ -396,10 +425,21 @@ public class Facile extends JFrame {
         // définition du panel des indices
         JPanel indice = new JPanel();
         indice.setLayout(new GridLayout(1, 0));
-        indice.add(new JLabel("Indice 1"));
-        indice.add(new JLabel("Indice 2"));
-        indice.add(new JLabel("Indice 3"));
-        indice.add(new JLabel("Indice 4"));
+        for(Indice indiceValue : partie.get_manches().get_ligneIndice().getIndices())
+        {
+            switch (indiceValue)
+            {
+                case BIEN_PLACE:
+                    indice.add(new JLabel("Noir "));
+                    break;
+                case MAL_PLACE:
+                    indice.add(new JLabel("Blanc "));
+                    break;
+                case ABSENT:
+                    indice.add(new JLabel("O "));
+                    break;
+            }
+        }
         indices.add(indice);
     }
 }

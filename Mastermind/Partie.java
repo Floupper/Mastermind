@@ -15,7 +15,7 @@ public class Partie {
         this.nbPionsCombinaison = 4;
         this.maxTentatives = 10;
         this.nbPions = 8;
-        _score = new Score();
+        _score = new Score(this.nbManche);
         _manches = new Manche();
     }
 
@@ -39,6 +39,10 @@ public class Partie {
         this.nbPions = nbPions;
     }
 
+    public void setJoueur(String joueur) {
+        this.joueur = joueur;
+    }
+
     public StrategyMode getMode() {
         return this.mode;
     }
@@ -60,5 +64,12 @@ public class Partie {
 
     public int getNbPions() {
         return this.nbPions;
+    }
+
+    public String getJoueur() {
+        return this.joueur;
+    }
+    public Manche get_manches() {
+        return this._manches;
     }
 }

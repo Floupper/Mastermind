@@ -44,7 +44,7 @@ public class Manche {
         return this._combinaisonsJoueur;
     }
     public int getNumTentative(){
-        return this.numTentative;
+        return this.numTentative + 1;
     }
     public void affichageCombinaisonSecrete() {
         System.out.println("Combinaison secrète : " + _combinaisonSecrete.getCombinaisonSecrete());
@@ -80,5 +80,8 @@ public class Manche {
                 return false;
             }
         }
+    }
+    public LigneIndice get_ligneIndice() {
+        return _ligneIndice;
     }
 }

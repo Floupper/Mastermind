@@ -6,13 +6,17 @@ public class Score {
     private ArrayList<Integer> scoreManches;
     private int scoreTotal;
 
-    public Score()
+    public Score(int nbManche)
     {
         this.scoreTotal = 0;
         this.scoreManches = new ArrayList<Integer>();
+        for(int i = 0 ;i < nbManche;i++)
+        {
+            this.scoreManches.add(0);
+        }
     }
 
-    public int calculerScoreManche(LigneIndice ligneIndice, StrategyMode mode)
+    public int calculerScoreManche(LigneIndice ligneIndice/*, StrategyMode mode*/)
     {
         int score = 0;
         ArrayList<Indice> indices = ligneIndice.getIndices();

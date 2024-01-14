@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MastermindFacade {
     public void jouerPartie() {
         /****************************************
-         * initialisation des variablles utiles
+         * initialisation des variables utiles
          ***************************************/
         int nbManche;
         int nbPionCombinaison;
@@ -72,7 +72,7 @@ public class MastermindFacade {
              ***************************************/
             while (!manche.verifierFinManche(partie.getMaxTentatives(), partie.getNbPionCombinaison())) {
                 System.out.println("========================================================\ntentative "
-                        + (manche.getNumTentative() + 1)
+                        + (manche.getNumTentative())
                         + " : \n========================================================");
                 System.out.println("Entrer une combinaison : ");
                 System.out.println("Pions dispobible : " + Pions.ROUGE + " " + Pions.BLEU + " " + Pions.VERT + " "
