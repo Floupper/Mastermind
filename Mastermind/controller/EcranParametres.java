@@ -1,6 +1,8 @@
 package Mastermind.controller;
 
+import Mastermind.view.Classique;
 import Mastermind.view.Facile;
+import Mastermind.view.Numerique;
 
 import javax.swing.*;
 
@@ -16,6 +18,7 @@ public class EcranParametres extends JFrame {
     JSpinner spnPionsCombinaison;
     JSpinner spnNbTentatives;
     JSpinner spnPionsDifferent;
+    JComboBox cbxMode;
     JTextField txtNom;
 
     public EcranParametres() {
@@ -43,9 +46,9 @@ public class EcranParametres extends JFrame {
         SpinnerModel smdPionsDifferent = new SpinnerNumberModel(8, 4, 8, 1);
         spnPionsDifferent = new JSpinner(smdPionsDifferent);
 
-        // Pour choisir la difficulté (Facile, Classique, Normale)
-        // JLabel lblDifficulte = new JLabel("Difficulté");
-        // CardLayout cardLayout = new CardLayout();
+        String[] Mode = {"Facile","Classique","Numerique"};
+        JComboBox cbxMode = new JComboBox(Mode);
+
 
         JLabel lblNom = new JLabel("entrez votre nom");
         txtNom = new JTextField();
@@ -62,8 +65,21 @@ public class EcranParametres extends JFrame {
             spnNbTentativesValue = (int) spnNbTentatives.getValue();
             spnPionsDifferentValue = (int) spnPionsDifferent.getValue();
             nomJoueur = txtNom.getText();
-            new Facile(nomJoueur, spnNbMancheValue, spnPionsCombinaisonValue, spnNbTentativesValue,
-                    spnPionsDifferentValue);
+            switch(cbxMode.getSelectedItem().toString())
+            {
+                case "Facile":
+                    new Facile(nomJoueur, spnNbMancheValue, spnPionsCombinaisonValue, spnNbTentativesValue,
+                            spnPionsDifferentValue);
+                    break;
+                case "Classique":
+                    new Classique(nomJoueur, spnNbMancheValue, spnPionsCombinaisonValue, spnNbTentativesValue,
+                            spnPionsDifferentValue);
+                    break;
+                case "Numerique":
+                    new Numerique(nomJoueur, spnNbMancheValue, spnPionsCombinaisonValue, spnNbTentativesValue,
+                            spnPionsDifferentValue);
+                    break;
+            }
             dispose();
         });
         btnValider.setAlignmentX(CENTER_ALIGNMENT);
@@ -81,7 +97,7 @@ public class EcranParametres extends JFrame {
         panel.add(spnNbTentatives);
         panel.add(lblPionsDifferent);
         panel.add(spnPionsDifferent);
-        // panel.add(lblDifficulte);
+        panel.add(cbxMode);
         panel.add(lblNom);
         panel.add(txtNom);
         panel.add(btnValider);

@@ -33,4 +33,14 @@ public class LigneIndice {
         }
         return NbCouleur;
     }
+
+    public int getAbsent() {
+        int NbCouleur = 0;
+        for (Indice indice : this._indices) {
+            if (indice == Indice.ABSENT) {
+                NbCouleur++;
+            }
+        }
+        return NbCouleur;
+    }
 }

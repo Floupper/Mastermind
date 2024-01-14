@@ -4,13 +4,12 @@ import Mastermind.model.Combinaison;
 import Mastermind.model.Indice;
 import Mastermind.model.Partie;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
-import javax.swing.*;
-
-public class Facile extends JFrame {
+public class Numerique extends JFrame {
     private JPanel panel;
     private JPanel pnlInfo;
     private JPanel informations;
@@ -34,8 +33,8 @@ public class Facile extends JFrame {
     private int nbManche;
     private ArrayList<String> tent = new ArrayList<String>();
     private JLabel scoreTotal;
-    public Facile(String nomJoueur, int spnNbMancheValue, int spnPionsCombinaisonValue, int spnNbTentativesValue,
-            int spnPionsDifferentValue) {
+    public Numerique(String nomJoueur, int spnNbMancheValue, int spnPionsCombinaisonValue, int spnNbTentativesValue,
+                     int spnPionsDifferentValue) {
         // définition de la page
         super("Mastermind");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -43,7 +42,6 @@ public class Facile extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
-        System.out.println("coucou");
 
         this.partie = new Partie();
         partie.setJoueur(nomJoueur);
@@ -451,21 +449,10 @@ public class Facile extends JFrame {
         // définition du panel des indices
         JPanel indice = new JPanel();
         indice.setLayout(new GridLayout(1, 0));
-        for(Indice indiceValue : partie.get_manches().get_ligneIndice().getIndices())
-        {
-            switch (indiceValue)
-            {
-                case BIEN_PLACE:
-                    indice.add(new JLabel("Noir "));
-                    break;
-                case MAL_PLACE:
-                    indice.add(new JLabel("Blanc "));
-                    break;
-                case ABSENT:
-                    indice.add(new JLabel("O "));
-                    break;
-            }
-        }
+        indice.add(new JLabel("Noir : "+ partie.get_manches().get_ligneIndice().getNbPositionCouleur()));
+        indice.add(new JLabel(" Blanc : " + partie.get_manches().get_ligneIndice().getNbCouleur()));
+        indice.add(new JLabel(" o : " + partie.get_manches().get_ligneIndice().getAbsent()));
+        for(int i = 0; i < partie.get_manches().get_ligneIndice().getNbCouleur(); i++)
         indices.add(indice);
     }
 }
