@@ -22,7 +22,7 @@ package Mastermind
     package model
     {
         class MastermindFacade {
-            + lancerPartie()
+            + jouerPartie()
         }
 
         class Partie {
@@ -42,15 +42,19 @@ package Mastermind
             + setNbPions(nbPions : Integer)
             + getMode() : StrategyMode
             + getNbManches() : Integer
+            + getScore(): Score
             + getNbPionCombinaison() : Integer
             + getMaxTentatives() : Integer
             + getNbPions() : Integer
+            + getJoueur() : String
+            + get_manches(): Manche
+            + setManche()
         }
 
         class Score {
             - scoreManches: Integer[*]
             - scoreTotal: Integer
-            + <<create>> Score()
+            + <<create>> Score(nbMances : Integer)
             + calculerScoreManche(indices : LigneIndice, mode : StrategyMode) : Integer
             + calculerScoreTotal(): Integer
             + getScoreManche(numManche : Integer) : Integer
@@ -63,7 +67,7 @@ package Mastermind
             - _combinaisonSecrete: Combinaison
             - _combinaisonsJoueur: Combinaison[*]
             - numTentative: Integer
-            # {static} _combinaisonsJoueurTest: Combinaison
+            + {static} _combinaisonsJoueurTest: Combinaison
             - _ligneIndice: LigneIndice
             + <<create>> Manche()
             + setLigneIndice()
@@ -79,6 +83,7 @@ package Mastermind
             + estGagne(NbPionsCombinaison : Integer) : Boolean
             + estDepasse(maxTentatives : Integer) : Boolean
             + verifierFinManche(NbPionsCombinaison : Integer, maxTentatives : Integer): Boolean
+            + get_ligneIndice(): LigneIndice
         }
 
         class Combinaison {
@@ -90,7 +95,7 @@ package Mastermind
             + addCombinaisonJoueur(choix: String)
             + verifierCorrespondance(tentative: Pions[*]): Indice[*]
             + {static} getCombinaisonSecrete(): Pions[*]
-            ° getCombinaisonJoueur(): Pions[*]
+            + getCombinaisonJoueur(): Pions[*]
         }
 
         class LigneIndices {
@@ -121,8 +126,8 @@ package Mastermind
         }
 
         enum Indice {
-            +POSITIONCOULEUR
-            +COULEUR
+            +BIEN_PLACE
+            +MAL_PLACE
             +ABSENT
         }
     }
@@ -136,7 +141,50 @@ package Mastermind
             + select()
         }
         class Facile implements StrategyMode {
-            + select()
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
         }
 
         class Classique implements StrategyMode {
@@ -146,6 +194,24 @@ package Mastermind
         class Numerique implements StrategyMode {
             + select()
         }
+
+        class EcranDemarrage {
+            - btnJouer: JButton 
+            - btnCredits: JButton 
+            - panelBoutonsMenu: JPanel 
+            - menu: JPanel 
+            - lblTitre: JLabel 
+            + EcranDemarrage()
+        }
+
+        class EcranFin {
+            + panelWin: JPanel 
+            + panelLoose: JPanel 
+            + rejouer: JButton 
+            + <<Create>> EcranFin()
+            + affichageWin()
+            + affichageLoose()
+        }
     }
 
     /''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -153,16 +219,13 @@ package Mastermind
     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
     package controller
     {
-        class Settings {
-            - nbManches: Integer
-            - nbPionsCombinaison: Integer
-            - nbTentatives: Integer
-            - nbPions: Integer
-            + <<create>> Settings()
-            + getNbManches(): Integer
-            + getNbPionsCombinaison(): Integer
-            + getNbTentatives(): Integer
-            + getNbPions(): Integer
+        class EcranParametres {
+            - spnNbMancheValue: Integer
+            - spnPionsCombinaisonValue: Integer
+            - spnNbTentativesValue: Integer
+            - spnPionsDifferentValue: Integer
+            - nomJoueur: String
+            + <<Create>> EcranParametres()
         }
     }
 }
