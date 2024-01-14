@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2671px" preserveAspectRatio="none" style="width:4091px;height:2671px;background:#FFFFFF;" version="1.1" viewBox="0 0 4091 2671" width="4091px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="27.6094" id="_title" style="stroke:none;stroke-width:1.0;" width="178" x="1949.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="168" x="1954.5" y="24.5332">Conception Mastermind</text><!--MD5=[a213d2eeb376cdbab3c41947b6528096]
+cluster Mastermind--><g id="cluster_Mastermind"><path d="M8.5,44.6094 L92.5,44.6094 A3.75,3.75 0 0 1 95,47.1094 L102,68.2188 L4081.5,68.2188 A2.5,2.5 0 0 1 4084,70.7188 L4084,2662.1094 A2.5,2.5 0 0 1 4081.5,2664.6094 L8.5,2664.6094 A2.5,2.5 0 0 1 6,2662.1094 L6,47.1094 A2.5,2.5 0 0 1 8.5,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="102" y1="68.2188" y2="68.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="83" x="10" y="61.1426">Mastermind</text></g><!--MD5=[5d4cd377749310b66bf14896f5cd8d9b]
+cluster model--><g id="cluster_model"><path d="M2744.5,339.6094 L2788.5,339.6094 A3.75,3.75 0 0 1 2791,342.1094 L2798,363.2188 L4057.5,363.2188 A2.5,2.5 0 0 1 4060,365.7188 L4060,2638.1094 A2.5,2.5 0 0 1 4057.5,2640.6094 L2744.5,2640.6094 A2.5,2.5 0 0 1 2742,2638.1094 L2742,342.1094 A2.5,2.5 0 0 1 2744.5,339.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="2742" x2="2798" y1="363.2188" y2="363.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="2746" y="356.1426">model</text></g><!--MD5=[86cbce8df1eb9d604fbbb2fa357940f8]
+cluster view--><g id="cluster_view"><path d="M32.5,1137.6094 L66.5,1137.6094 A3.75,3.75 0 0 1 69,1140.1094 L76,1161.2188 L2715.5,1161.2188 A2.5,2.5 0 0 1 2718,1163.7188 L2718,2382.1094 A2.5,2.5 0 0 1 2715.5,2384.6094 L32.5,2384.6094 A2.5,2.5 0 0 1 30,2382.1094 L30,1140.1094 A2.5,2.5 0 0 1 32.5,1137.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="30" x2="76" y1="1161.2188" y2="1161.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="33" x="34" y="1154.1426">view</text></g><!--MD5=[10ea673caf457862023e152271927b45]
+cluster controller--><g id="cluster_controller"><path d="M3372.5,88.6094 L3442.5,88.6094 A3.75,3.75 0 0 1 3445,91.1094 L3452,112.2188 L3671.5,112.2188 A2.5,2.5 0 0 1 3674,114.7188 L3674,287.1094 A2.5,2.5 0 0 1 3671.5,289.6094 L3372.5,289.6094 A2.5,2.5 0 0 1 3370,287.1094 L3370,91.1094 A2.5,2.5 0 0 1 3372.5,88.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="3370" x2="3452" y1="112.2188" y2="112.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="69" x="3374" y="105.1426">controller</text></g><!--MD5=[17c541cdcbb371ae0416e90b6c4a66fc]
+class MastermindApp--><g id="elem_MastermindApp"><rect codeLine="14" fill="#F1F1F1" height="61.2188" id="MastermindApp" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="2812" y="168.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="110" x="2834" y="188.1426">MastermindApp</text><line style="stroke:#181818;stroke-width:0.5;" x1="2813" x2="2965" y1="196.2188" y2="196.2188"/><line style="stroke:#181818;stroke-width:0.5;" x1="2813" x2="2965" y1="204.2188" y2="204.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="142" x="2818" y="222.752">+main(args: String[])</text></g><!--MD5=[b3f89656a849ab54c9e01db87a5aecf0]
+class MastermindFacade--><g id="elem_MastermindFacade"><rect codeLine="23" fill="#F1F1F1" height="61.2188" id="MastermindFacade" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="2819" y="375.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="2822" y="395.1426">MastermindFacade</text><line style="stroke:#181818;stroke-width:0.5;" x1="2820" x2="2958" y1="403.2188" y2="403.2188"/><line style="stroke:#181818;stroke-width:0.5;" x1="2820" x2="2958" y1="411.2188" y2="411.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="2825" y="429.752">+jouerPartie()</text></g><!--MD5=[a13b29b436488db240599346aff8582a]
+class Partie--><g id="elem_Partie"><rect codeLine="27" fill="#F1F1F1" height="448.625" id="Partie" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="405" x="3055.5" y="514.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="41" x="3237.5" y="534.1426">Partie</text><line style="stroke:#181818;stroke-width:0.5;" x1="3056.5" x2="3459.5" y1="542.2188" y2="542.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101" x="3061.5" y="560.752">-joueur: String</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="3061.5" y="578.3613">-_score: Score</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="150" x="3061.5" y="595.9707">-mode: StrategyMode</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="132" x="3061.5" y="613.5801">-_manche: Manche</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="141" x="3061.5" y="631.1895">#nbManche: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="215" x="3061.5" y="648.7988">#nbPionsCombinaison: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="169" x="3061.5" y="666.4082">#maxTentatives: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="124" x="3061.5" y="684.0176">#nbPions: Integer</text><line style="stroke:#181818;stroke-width:0.5;" x1="3056.5" x2="3459.5" y1="691.0938" y2="691.0938"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="124" x="3061.5" y="709.627">+«create» Partie()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="229" x="3061.5" y="727.2363">+setMode(mode : StrategyMode)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="268" x="3061.5" y="744.8457">+setNbManches(nbManches : Integer)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="393" x="3061.5" y="762.4551">+setNbPionCombinaison(NbPionsCombinaison : Integer)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="308" x="3061.5" y="780.0645">+setMaxTentatives(maxTentatives : Integer)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="218" x="3061.5" y="797.6738">+setNbPions(nbPions : Integer)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="191" x="3061.5" y="815.2832">+getMode() : StrategyMode</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="187" x="3061.5" y="832.8926">+getNbManches() : Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="131" x="3061.5" y="850.502">+getScore(): Score</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="245" x="3061.5" y="868.1113">+getNbPionCombinaison() : Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="207" x="3061.5" y="885.7207">+getMaxTentatives() : Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="162" x="3061.5" y="903.3301">+getNbPions() : Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="145" x="3061.5" y="920.9395">+getJoueur() : String</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="176" x="3061.5" y="938.5488">+get_manches(): Manche</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="3061.5" y="956.1582">+setManche()</text></g><!--MD5=[107af66394bf1ebaa045812c9c475148]
+class Score--><g id="elem_Score"><rect codeLine="53" fill="#F1F1F1" height="184.4844" id="Score" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="548" x="3496" y="647.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="41" x="3749.5" y="666.6426">Score</text><line style="stroke:#181818;stroke-width:0.5;" x1="3497" x2="4043" y1="674.7188" y2="674.7188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="183" x="3502" y="693.252">-scoreManches: Integer[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="138" x="3502" y="710.8613">-scoreTotal: Integer</text><line style="stroke:#181818;stroke-width:0.5;" x1="3497" x2="4043" y1="717.9375" y2="717.9375"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="260" x="3502" y="736.4707">+«create» Score(nbMances : Integer)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="536" x="3502" y="754.0801">+calculerScoreManche(indices : LigneIndice, mode : StrategyMode) : Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="208" x="3502" y="771.6895">+calculerScoreTotal(): Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="350" x="3502" y="789.2988">+getScoreManche(numManche : Integer) : Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="224" x="3502" y="806.9082">+getScoreManches() : Integer[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="179" x="3502" y="824.5176">+getScoreTotal() : Integer</text></g><!--MD5=[4ffdcd8fca97af8cdf06c6077c5219c0]
+class Manche--><g id="elem_Manche"><rect codeLine="64" fill="#F1F1F1" height="413.4063" id="Manche" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="611" x="2952.5" y="1041.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="56" x="3230" y="1061.1426">Manche</text><line style="stroke:#181818;stroke-width:0.5;" x1="2953.5" x2="3562.5" y1="1069.2188" y2="1069.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="2958.5" y="1087.752">-_indices: LigneIndice[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="256" x="2958.5" y="1105.3613">-_combinaisonSecrete: Combinaison</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="274" x="2958.5" y="1122.9707">-_combinaisonsJoueur: Combinaison[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="160" x="2958.5" y="1140.5801">-numTentative: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="292" x="2958.5" y="1158.1895">+_combinaisonsJoueurTest: Combinaison</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="181" x="2958.5" y="1175.7988">-_ligneIndice: LigneIndice</text><line style="stroke:#181818;stroke-width:0.5;" x1="2953.5" x2="3562.5" y1="1182.875" y2="1182.875"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="139" x="2958.5" y="1201.4082">+«create» Manche()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="122" x="2958.5" y="1219.0176">+setLigneIndice()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="199" x="2958.5" y="1236.627">+unsetCombinaisonJoueur()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="140" x="2958.5" y="1254.2363">+unsetLigneIndice()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="296" x="2958.5" y="1271.8457">+ajouterTentative(tentative: Combinaison)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="197" x="2958.5" y="1289.4551">+getIndices(): LigneIndice[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="304" x="2958.5" y="1307.0645">+getCombinaisonsJoueur(): Combinaison[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="201" x="2958.5" y="1324.6738">+getNumTentative() : Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="229" x="2958.5" y="1342.2832">+affichageCombinaisonSecrete()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="224" x="2958.5" y="1359.8926">+affichageCombinaisonJoueur()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="2958.5" y="1377.502">+affichageIndices()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="368" x="2958.5" y="1395.1113">+estGagne(NbPionsCombinaison : Integer) : Boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="336" x="2958.5" y="1412.7207">+estDepasse(maxTentatives : Integer) : Boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="599" x="2958.5" y="1430.3301">+verifierFinManche(NbPionsCombinaison : Integer, maxTentatives : Integer): Boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="217" x="2958.5" y="1447.9395">+get_ligneIndice(): LigneIndice</text></g><!--MD5=[363033939fcb2d202dadf11a2a3f825e]
+class Combinaison--><g id="elem_Combinaison"><rect codeLine="88" fill="#F1F1F1" height="202.0938" id="Combinaison" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="391" x="3062.5" y="1849.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="3212.5" y="1869.1426">Combinaison</text><line style="stroke:#181818;stroke-width:0.5;" x1="3063.5" x2="3452.5" y1="1877.2188" y2="1877.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="214" x="3068.5" y="1895.752">-_combinaisonJoueur: Pions[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="219" x="3068.5" y="1913.3613">-_combinaisonSecrete: Pions[*]</text><line style="stroke:#181818;stroke-width:0.5;" x1="3063.5" x2="3452.5" y1="1920.4375" y2="1920.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="226" x="3068.5" y="1938.9707">+«create» Combinaison(flag: int)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="367" x="3068.5" y="1956.5801">+setCombinaisonJoueur(combinaisonJoueur: Pions)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="283" x="3068.5" y="1974.1895">+genererCombinaisonSecrete(): Pions[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="273" x="3068.5" y="1991.7988">+addCombinaisonJoueur(choix: String)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="379" x="3068.5" y="2009.4082">+verifierCorrespondance(tentative: Pions[*]): Indice[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="249" x="3068.5" y="2027.0176">+getCombinaisonSecrete(): Pions[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="244" x="3068.5" y="2044.627">+getCombinaisonJoueur(): Pions[*]</text></g><!--MD5=[a2c647d210ede5aeba6b81f02e458a78]
+class LigneIndices--><g id="elem_LigneIndices"><rect codeLine="100" fill="#F1F1F1" height="166.875" id="LigneIndices" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="215" x="3706.5" y="1164.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="90" x="3769" y="1184.1426">LigneIndices</text><line style="stroke:#181818;stroke-width:0.5;" x1="3707.5" x2="3920.5" y1="1192.2188" y2="1192.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="130" x="3712.5" y="1210.752">-_indices: Indice[*]</text><line style="stroke:#181818;stroke-width:0.5;" x1="3707.5" x2="3920.5" y1="1217.8281" y2="1217.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="173" x="3712.5" y="1236.3613">+«create» LigneIndices()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="193" x="3712.5" y="1253.9707">+setIndices(indices: Indice)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="158" x="3712.5" y="1271.5801">+getIndices(): Indice[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="203" x="3712.5" y="1289.1895">+getNbPositionCouleur() : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="3712.5" y="1306.7988">+getNbCouleur() : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="139" x="3712.5" y="1324.4082">+getNbAbsent() : int</text></g><!--MD5=[be25f3cd61f09ecd9f4331eafbee5fa9]
+class ModeFactory--><g id="elem_ModeFactory"><rect codeLine="110" fill="#F1F1F1" height="114.0469" id="ModeFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="262" x="2758" y="682.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="2843" y="701.6426">ModeFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="2759" x2="3019" y1="709.7188" y2="709.7188"/><line style="stroke:#181818;stroke-width:0.5;" x1="2759" x2="3019" y1="717.7188" y2="717.7188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="175" x="2764" y="736.252">+«create» ModeFactory()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="215" x="2764" y="753.8613">+createFacile() : StrategyMode</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="242" x="2764" y="771.4707">+createClassique() : StrategyMode</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="250" x="2764" y="789.0801">+createNumerique() : StrategyMode</text></g><!--MD5=[afec6019663de7f3c82e8095c2472ba4]
+class Pions--><g id="elem_Pions"><rect codeLine="117" fill="#F1F1F1" height="176.4844" id="Pions" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="3218" y="2448.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="39" x="3238.5" y="2468.1426">Pions</text><line style="stroke:#181818;stroke-width:0.5;" x1="3219" x2="3297" y1="2476.2188" y2="2476.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="3224" y="2494.752">+ROUGE</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="45" x="3224" y="2512.3613">+BLEU</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="44" x="3224" y="2529.9707">+VERT</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54" x="3224" y="2547.5801">+JAUNE</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="68" x="3224" y="2565.1895">+ORANGE</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="3224" y="2582.7988">+VIOLET</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="55" x="3224" y="2600.4082">+BLANC</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="3224" y="2618.0176">+NOIR</text></g><!--MD5=[dc26de93e86b1c07a782dae5ea77a927]
+class Indice--><g id="elem_Indice"><rect codeLine="128" fill="#F1F1F1" height="88.4375" id="Indice" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="106" x="3761" y="1906.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="3792.5" y="1926.1426">Indice</text><line style="stroke:#181818;stroke-width:0.5;" x1="3762" x2="3866" y1="1934.2188" y2="1934.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="3767" y="1952.752">+BIEN_PLACE</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="3767" y="1970.3613">+MAL_PLACE</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="63" x="3767" y="1987.9707">+ABSENT</text></g><!--MD5=[54ef46cc1017b7bf4cab25627d4547f1]
+class StrategyMode--><g id="elem_StrategyMode"><rect codeLine="140" fill="#F1F1F1" height="61.2188" id="StrategyMode" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="97" x="2246.5" y="1217.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="91" x="2249.5" y="1237.1426">StrategyMode</text><line style="stroke:#181818;stroke-width:0.5;" x1="2247.5" x2="2342.5" y1="1245.2188" y2="1245.2188"/><line style="stroke:#181818;stroke-width:0.5;" x1="2247.5" x2="2342.5" y1="1253.2188" y2="1253.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="61" x="2252.5" y="1271.752">+select()</text></g><!--MD5=[1a22e7c43c8c758a1bea5eff0a596e57]
+class Facile--><g id="elem_Facile"><rect codeLine="143" fill="#F1F1F1" height="818.4219" id="Facile" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="862" x="1840" y="1541.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="42" x="2250" y="1561.1426">Facile</text><line style="stroke:#181818;stroke-width:0.5;" x1="1841" x2="2701" y1="1569.2188" y2="1569.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="1846" y="1587.752">-panel : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="113" x="1846" y="1605.3613">-pnlInfo : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="152" x="1846" y="1622.9707">-informations : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="1846" y="1640.5801">-pions : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="135" x="1846" y="1658.1895">-tentatives : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="127" x="1846" y="1675.7988">-tentative : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="115" x="1846" y="1693.4082">-indices : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="105" x="1846" y="1711.0176">-rouge : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="1846" y="1728.627">-bleu : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="1846" y="1746.2363">-vert : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="1846" y="1763.8457">-jaune : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="113" x="1846" y="1781.4551">-orange : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="1846" y="1799.0645">-violet : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101" x="1846" y="1816.6738">-blanc : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="1846" y="1834.2832">-noir : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="1846" y="1851.8926">-position : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="1846" y="1869.502">-partie : Partie</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="149" x="1846" y="1887.1113">-numManche : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="159" x="1846" y="1904.7207">-numTentative : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="109" x="1846" y="1922.3301">-nbManche : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="1846" y="1939.9395">-scoreTotal : JLabel</text><line style="stroke:#181818;stroke-width:0.5;" x1="1841" x2="2701" y1="1947.0156" y2="1947.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="280" x="1846" y="1965.5488">-tent = new ArrayList&lt;String&gt;() : String[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="850" x="1846" y="1983.1582">+«Creata» Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="197" x="1846" y="2000.7676">spnPionsDifferentValue: int)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="130" x="1846" y="2018.377">+setInfos(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="144" x="1846" y="2035.9863">+setJoueur(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="181" x="1846" y="2053.5957">+setNumManche(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="179" x="1846" y="2071.2051">+setNbTentative(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="1846" y="2088.8145">+setScoreTotal(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="1846" y="2106.4238">+setPions(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="140" x="1846" y="2124.0332">+setRouge(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="126" x="1846" y="2141.6426">+setBleu(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="123" x="1846" y="2159.252">+setVert(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="1846" y="2176.8613">+setJaune(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="1846" y="2194.4707">+setOrange(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="1846" y="2212.0801">+setViolet(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="133" x="1846" y="2229.6895">+setBlanc(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="123" x="1846" y="2247.2988">+setNoir(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="1846" y="2264.9082">+setTentatives(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="166" x="1846" y="2282.5176">+addTentativesPasser()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="161" x="1846" y="2300.127">+setTentative(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="1846" y="2317.7363">+setVide() : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="1846" y="2335.3457">+setIndices(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="95" x="1846" y="2352.9551">+addIndices()</text></g><!--MD5=[a10c6eb2f6414228d9e719d0bc384d48]
+class Classique--><g id="elem_Classique"><rect codeLine="190" fill="#F1F1F1" height="836.0313" id="Classique" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="862" x="46" y="1532.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="69" x="442.5" y="1552.1426">Classique</text><line style="stroke:#181818;stroke-width:0.5;" x1="47" x2="907" y1="1560.2188" y2="1560.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="52" y="1578.752">-panel : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="113" x="52" y="1596.3613">-pnlInfo : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="152" x="52" y="1613.9707">-informations : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="52" y="1631.5801">-pions : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="135" x="52" y="1649.1895">-tentatives : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="127" x="52" y="1666.7988">-tentative : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="115" x="52" y="1684.4082">-indices : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="105" x="52" y="1702.0176">-rouge : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="52" y="1719.627">-bleu : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="52" y="1737.2363">-vert : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="52" y="1754.8457">-jaune : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="113" x="52" y="1772.4551">-orange : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="52" y="1790.0645">-violet : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101" x="52" y="1807.6738">-blanc : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="52" y="1825.2832">-noir : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="52" y="1842.8926">-position : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="52" y="1860.502">-partie : Partie</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="149" x="52" y="1878.1113">-numManche : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="159" x="52" y="1895.7207">-numTentative : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="109" x="52" y="1913.3301">-nbManche : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="52" y="1930.9395">-scoreTotal : JLabel</text><line style="stroke:#181818;stroke-width:0.5;" x1="47" x2="907" y1="1938.0156" y2="1938.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="61" x="52" y="1956.5488">+select()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="280" x="52" y="1974.1582">-tent = new ArrayList&lt;String&gt;() : String[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="850" x="52" y="1991.7676">+«Creata» Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="197" x="52" y="2009.377">spnPionsDifferentValue: int)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="130" x="52" y="2026.9863">+setInfos(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="144" x="52" y="2044.5957">+setJoueur(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="181" x="52" y="2062.2051">+setNumManche(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="179" x="52" y="2079.8145">+setNbTentative(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="52" y="2097.4238">+setScoreTotal(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="52" y="2115.0332">+setPions(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="140" x="52" y="2132.6426">+setRouge(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="126" x="52" y="2150.252">+setBleu(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="123" x="52" y="2167.8613">+setVert(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="52" y="2185.4707">+setJaune(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="52" y="2203.0801">+setOrange(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="52" y="2220.6895">+setViolet(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="133" x="52" y="2238.2988">+setBlanc(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="123" x="52" y="2255.9082">+setNoir(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="52" y="2273.5176">+setTentatives(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="166" x="52" y="2291.127">+addTentativesPasser()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="161" x="52" y="2308.7363">+setTentative(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="52" y="2326.3457">+setVide() : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="52" y="2343.9551">+setIndices(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="95" x="52" y="2361.5645">+addIndices()</text></g><!--MD5=[4e03fd1ecfd91c142c2100727ae6a1fc]
+class Numerique--><g id="elem_Numerique"><rect codeLine="238" fill="#F1F1F1" height="836.0313" id="Numerique" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="862" x="943" y="1532.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="77" x="1335.5" y="1552.1426">Numerique</text><line style="stroke:#181818;stroke-width:0.5;" x1="944" x2="1804" y1="1560.2188" y2="1560.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="949" y="1578.752">-panel : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="113" x="949" y="1596.3613">-pnlInfo : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="152" x="949" y="1613.9707">-informations : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="949" y="1631.5801">-pions : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="135" x="949" y="1649.1895">-tentatives : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="127" x="949" y="1666.7988">-tentative : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="115" x="949" y="1684.4082">-indices : JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="105" x="949" y="1702.0176">-rouge : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="949" y="1719.627">-bleu : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="949" y="1737.2363">-vert : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="949" y="1754.8457">-jaune : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="113" x="949" y="1772.4551">-orange : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="949" y="1790.0645">-violet : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101" x="949" y="1807.6738">-blanc : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="949" y="1825.2832">-noir : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="949" y="1842.8926">-position : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="949" y="1860.502">-partie : Partie</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="149" x="949" y="1878.1113">-numManche : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="159" x="949" y="1895.7207">-numTentative : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="109" x="949" y="1913.3301">-nbManche : int</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="949" y="1930.9395">-scoreTotal : JLabel</text><line style="stroke:#181818;stroke-width:0.5;" x1="944" x2="1804" y1="1938.0156" y2="1938.0156"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="61" x="949" y="1956.5488">+select()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="280" x="949" y="1974.1582">-tent = new ArrayList&lt;String&gt;() : String[*]</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="850" x="949" y="1991.7676">+«Creata» Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="197" x="949" y="2009.377">spnPionsDifferentValue: int)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="130" x="949" y="2026.9863">+setInfos(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="144" x="949" y="2044.5957">+setJoueur(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="181" x="949" y="2062.2051">+setNumManche(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="179" x="949" y="2079.8145">+setNbTentative(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="949" y="2097.4238">+setScoreTotal(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="949" y="2115.0332">+setPions(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="140" x="949" y="2132.6426">+setRouge(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="126" x="949" y="2150.252">+setBleu(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="123" x="949" y="2167.8613">+setVert(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="949" y="2185.4707">+setJaune(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="949" y="2203.0801">+setOrange(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="949" y="2220.6895">+setViolet(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="133" x="949" y="2238.2988">+setBlanc(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="123" x="949" y="2255.9082">+setNoir(): JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="949" y="2273.5176">+setTentatives(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="166" x="949" y="2291.127">+addTentativesPasser()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="161" x="949" y="2308.7363">+setTentative(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="949" y="2326.3457">+setVide() : JLabel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="949" y="2343.9551">+setIndices(): JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="95" x="949" y="2361.5645">+addIndices()</text></g><!--MD5=[3040350dec6944a1120fd25a56456a4b]
+class EcranDemarrage--><g id="elem_EcranDemarrage"><rect codeLine="286" fill="#F1F1F1" height="149.2656" id="EcranDemarrage" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="210" x="1567" y="1173.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="117" x="1613.5" y="1193.1426">EcranDemarrage</text><line style="stroke:#181818;stroke-width:0.5;" x1="1568" x2="1776" y1="1201.2188" y2="1201.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="132" x="1573" y="1219.752">-btnJouer: JButton</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="1573" y="1237.3613">-btnCredits: JButton</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="198" x="1573" y="1254.9707">-panelBoutonsMenu: JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="1573" y="1272.5801">-menu: JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108" x="1573" y="1290.1895">-lblTitre: JLabel</text><line style="stroke:#181818;stroke-width:0.5;" x1="1568" x2="1776" y1="1297.2656" y2="1297.2656"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="135" x="1573" y="1315.7988">+EcranDemarrage()</text></g><!--MD5=[cae9bc8e2be353a1034c4b931a39c668]
+class EcranFin--><g id="elem_EcranFin"><rect codeLine="295" fill="#F1F1F1" height="149.2656" id="EcranFin" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="159" x="504.5" y="1173.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="62" x="553" y="1193.1426">EcranFin</text><line style="stroke:#181818;stroke-width:0.5;" x1="505.5" x2="662.5" y1="1201.2188" y2="1201.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="128" x="510.5" y="1219.752">+panelWin: JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="145" x="510.5" y="1237.3613">+panelLoose: JPanel</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="123" x="510.5" y="1254.9707">+rejouer: JButton</text><line style="stroke:#181818;stroke-width:0.5;" x1="505.5" x2="662.5" y1="1262.0469" y2="1262.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="147" x="510.5" y="1280.5801">+«Create» EcranFin()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="109" x="510.5" y="1298.1895">+affichageWin()</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="126" x="510.5" y="1315.7988">+affichageLoose()</text></g><!--MD5=[cc066d34b10863f10f7186b34a2ce310]
+class EcranParametres--><g id="elem_EcranParametres"><rect codeLine="310" fill="#F1F1F1" height="149.2656" id="EcranParametres" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="271" x="3386.5" y="124.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="120" x="3462" y="144.1426">EcranParametres</text><line style="stroke:#181818;stroke-width:0.5;" x1="3387.5" x2="3656.5" y1="152.2188" y2="152.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="204" x="3392.5" y="170.752">-spnNbMancheValue: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="259" x="3392.5" y="188.3613">-spnPionsCombinaisonValue: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="222" x="3392.5" y="205.9707">-spnNbTentativesValue: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="230" x="3392.5" y="223.5801">-spnPionsDifferentValue: Integer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="135" x="3392.5" y="241.1895">-nomJoueur: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="3387.5" x2="3656.5" y1="248.2656" y2="248.2656"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="205" x="3392.5" y="266.7988">+«Create» EcranParametres()</text></g><!--MD5=[74c13cd1543187fff49b8fd41bf46a73]
+reverse link StrategyMode to Facile--><g id="link_StrategyMode_Facile"><path d="M2293.3,1298.7694 C2291.46,1352.5394 2288.33,1443.7694 2284.99,1541.1694 " fill="none" id="StrategyMode-backto-Facile" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2286.3,1298.5094,2293.98,1278.7594,2300.3,1298.9894,2286.3,1298.5094" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[03006f2b103d9c12c2fc6f7ad5cc1da7]
+reverse link StrategyMode to Classique--><g id="link_StrategyMode_Classique"><path d="M2228.39,1284.0894 C2134.56,1331.5894 1956.8,1415.0594 1795,1454.6094 C1418.32,1546.6894 1280.23,1374.8494 926,1532.6094 C920.05,1535.2594 914.12,1538.0194 908.23,1540.8894 " fill="none" id="StrategyMode-backto-Classique" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2225.29,1277.8194,2246.28,1274.9594,2231.66,1290.2894,2225.29,1277.8194" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1752bd924f6d8b3a95080e277fda7f3a]
+reverse link StrategyMode to Numerique--><g id="link_StrategyMode_Numerique"><path d="M2228.4,1283.4094 C2134.41,1333.0494 1959.13,1430.2594 1823,1532.6094 C1817.05,1537.0894 1811.09,1541.6294 1805.12,1546.2294 " fill="none" id="StrategyMode-backto-Numerique" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2225.39,1277.0794,2246.35,1273.9794,2231.9,1289.4694,2225.39,1277.0794" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f22cb1fa5ff508a8f61e9b344084a323]
+link MastermindApp to MastermindFacade--><g id="link_MastermindApp_MastermindFacade"><path codeLine="324" d="M2889,229.9194 C2889,267.2194 2889,330.9894 2889,370.4394 " fill="none" id="MastermindApp-to-MastermindFacade" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2889,375.5994,2893,366.5994,2889,370.5994,2885,366.5994,2889,375.5994" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="2890" y="320.1045">«uses»</text></g><!--MD5=[fd47d9369bfcb02da25f12a3fab48238]
+link MastermindFacade to Partie--><g id="link_MastermindFacade_Partie"><path codeLine="325" d="M2934.16,436.7494 C2964.49,457.3694 3004.84,486.1494 3038,514.6094 C3042.52,518.4894 3047.05,522.4394 3051.59,526.4594 " fill="none" id="MastermindFacade-to-Partie" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="3055.41,529.8494,3051.3238,520.8882,3051.6667,526.5347,3046.0202,526.8776,3055.41,529.8494" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="2999" y="481.1045">«uses»</text></g><!--MD5=[1cd8e2a022f6eb2a3c5f7e722d3237da]
+link MastermindFacade to StrategyMode--><g id="link_MastermindFacade_StrategyMode"><path codeLine="326" d="M2818.82,434.8194 C2779.43,453.0094 2731.43,479.8894 2697,514.6094 C2478.1,735.3694 2343.97,1099.8694 2306.09,1212.7294 " fill="none" id="MastermindFacade-to-StrategyMode" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2304.47,1217.5894,2311.1174,1210.3221,2306.0554,1212.8474,2303.5302,1207.7855,2304.47,1217.5894" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="2698" y="744.6045">«uses»</text></g><!--MD5=[79dd320e83fc1873a1f4b42e372461ef]
+link MastermindFacade to ModeFactory--><g id="link_MastermindFacade_ModeFactory"><path codeLine="327" d="M2889,436.7794 C2889,490.6194 2889,605.4694 2889,676.7994 " fill="none" id="MastermindFacade-to-ModeFactory" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2889,681.8594,2893,672.8594,2889,676.8594,2885,672.8594,2889,681.8594" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="2890" y="481.1045">«uses»</text></g><!--MD5=[5110a97e64d57a02951365ec17283d32]
+link Partie to Manche--><g id="link_Partie_Manche"><path codeLine="328" d="M3258,975.9594 C3258,975.9594 3258,1011.1294 3258,1027.9094 " fill="none" id="Partie-Manche" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3258,1041.3194,3262,1032.3194,3258,1036.3194,3254,1032.3194,3258,1041.3194" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="3258" x2="3258" y1="1036.3194" y2="1028.3194"/><polygon fill="#181818" points="3258,963.9594,3254,969.9594,3258,975.9594,3262,969.9594,3258,963.9594" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="3263,1007.7852,3265.9389,998.7401,3260.0611,998.7401,3263,1007.7852" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="3272" y="1008.1045">est composé de</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="3211.6719" y="1014.1176">3..5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="3192.6719" y="1030.4691">-_manches</text></g><!--MD5=[eaa31ea9d08320826a0ebc41ba7e5e66]
+link Partie to StrategyMode--><g id="link_Partie_StrategyMode"><path codeLine="329" d="M3044.822,960.0062 C3044.822,960.0062 3039.91,962.6394 3038,963.6094 C2823.25,1072.3994 2717.37,934.0594 2502,1041.6094 C2424.66,1080.2294 2358.42,1158.7194 2322.87,1206.7294 " fill="none" id="Partie-StrategyMode" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2315.13,1217.3694,2323.6573,1212.4414,2318.0699,1213.325,2317.1863,1207.7376,2315.13,1217.3694" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="2318.0699" x2="2322.78" y1="1213.325" y2="1206.8544"/><polygon fill="none" points="3055.29,954.1394,3048.1004,953.5835,3044.822,960.0062,3052.0116,960.5622,3055.29,954.1394" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="2953.2687,1004.4021,2962.7781,1004.2581,2960.8773,998.696,2953.2687,1004.4021" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="2967" y="1008.1045">select</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="2289.8774" y="1190.2915">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="2271.8774" y="1206.643">-_mode</text></g><!--MD5=[e8acaefdd315f54bd7040a2b9eca2264]
+link Partie to Score--><g id="link_Partie_Score"><path codeLine="330" d="M3473,739.1094 C3473,739.1094 3479.66,739.1094 3482.49,739.1094 " fill="none" id="Partie-Score" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3495.7,739.1094,3486.7,735.1094,3490.7,739.1094,3486.7,743.1094,3495.7,739.1094" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="3490.7" x2="3482.7" y1="739.1094" y2="739.1094"/><polygon fill="#181818" points="3461,739.1094,3467,743.1094,3473,739.1094,3467,735.1094,3461,739.1094" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="3463.3961" y="718.0591">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="3445.3961" y="734.4107">-_score</text></g><!--MD5=[5e01d28309edc31c45811617bab66729]
+link Manche to LigneIndices--><g id="link_Manche_LigneIndices"><path codeLine="331" d="M3575.65,1248.1094 C3575.65,1248.1094 3658.2,1248.1094 3693.28,1248.1094 " fill="none" id="Manche-LigneIndices" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3706.48,1248.1094,3697.48,1244.1094,3701.48,1248.1094,3697.48,1252.1094,3706.48,1248.1094" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="3701.48" x2="3693.48" y1="1248.1094" y2="1248.1094"/><polygon fill="#181818" points="3563.65,1248.1094,3569.65,1252.1094,3575.65,1248.1094,3569.65,1244.1094,3563.65,1248.1094" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="3591,1236.2852,3581.9549,1233.3462,3581.9549,1239.2241,3591,1236.2852" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="3595" y="1241.6045">est composé de</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="3668.1453" y="1262.5534">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="3646.6453" y="1278.905">-_indices</text></g><!--MD5=[20fa6115ba3fb450f1f6503a5143075c]
+link Manche to Combinaison--><g id="link_Manche_Combinaison"><path codeLine="332" d="M3184.2757,1466.394 C3184.2757,1466.394 3181.89,1479.0494 3181,1484.6094 C3161.83,1604.9394 3191.01,1742.6094 3218.78,1836.7394 " fill="none" id="Manche-Combinaison" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3222.6,1849.4394,3223.838,1839.6686,3221.1597,1844.6513,3216.1771,1841.9731,3222.6,1849.4394" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="3221.1597" x2="3218.855" y1="1844.6513" y2="1836.9894"/><polygon fill="#181818" points="3186.69,1454.6394,3181.5647,1459.7119,3184.2757,1466.394,3189.4011,1461.3214,3186.69,1454.6394" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="3186.4638,1498.7636,3188.551,1489.4849,3182.6985,1490.0301,3186.4638,1498.7636" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="3195" y="1499.1045">est composé de</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="3164.43" y="1822.3522">10..12</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="3151.43" y="1838.7038">-_tentatives</text></g><!--MD5=[20fa6115ba3fb450f1f6503a5143075c]
+link Manche to Combinaison--><g id="link_Manche_Combinaison"><path codeLine="333" d="M3291.5183,1466.6743 C3291.5183,1466.6743 3292.59,1479.0994 3293,1484.6094 C3301.88,1604.7094 3288.62,1742.2394 3275.95,1836.3894 " fill="none" id="Manche-Combinaison-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3274.17,1849.3794,3279.3493,1841.0024,3274.8456,1844.4252,3271.4227,1839.9215,3274.17,1849.3794" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="3274.8456" x2="3275.94" y1="1844.4252" y2="1836.5044"/><polygon fill="#181818" points="3290.37,1454.7294,3286.9625,1461.0846,3291.5183,1466.6743,3294.9258,1460.3191,3290.37,1454.7294" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="3297.7896,1498.7807,3301.1065,1489.8673,3295.2339,1489.62,3297.7896,1498.7807" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="3307" y="1499.1045">est composé de</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="3345.9247" y="1822.2878">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="134" x="3284.4247" y="1838.6394">-_combinaison_secrete</text></g><!--MD5=[d612877f6e9bc8f67aa322b9086c2649]
+link LigneIndices to Indice--><g id="link_LigneIndices_Indice"><path codeLine="334" d="M3814,1331.8694 C3814,1479.3794 3814,1783.3194 3814,1901.2994 " fill="none" id="LigneIndices-to-Indice" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3814,1906.4394,3818,1897.4394,3814,1901.4394,3810,1897.4394,3814,1906.4394" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="3819,1498.7852,3821.9389,1489.7401,3816.0611,1489.7401,3819,1498.7852" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="3828" y="1499.1045">est composé de</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="3779.5625" y="1879.4918">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="3758.0625" y="1895.8433">-_indices</text></g><!--MD5=[9ecd4de165d04bb204cfa375b660ea9d]
+link Combinaison to Pions--><g id="link_Combinaison_Pions"><path codeLine="335" d="M3258,2063.6694 C3258,2063.6694 3258,2332.0694 3258,2435.1094 " fill="none" id="Combinaison-Pions" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3258,2448.3194,3262,2439.3194,3258,2443.3194,3254,2439.3194,3258,2448.3194" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="3258" x2="3258" y1="2443.3194" y2="2435.3194"/><polygon fill="none" points="3258,2051.6694,3254,2057.6694,3258,2063.6694,3262,2057.6694,3258,2051.6694" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="3263,2414.7852,3265.9389,2405.7401,3260.0611,2405.7401,3263,2414.7852" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="3272" y="2415.1045">est composé de</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="3222.1672" y="2421.5126">4..6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="3214.1672" y="2437.8642">-_pions</text></g><!--MD5=[1f1e390806dc6766f1ef29122033e757]
+link ModeFactory to StrategyMode--><g id="link_ModeFactory_StrategyMode"><path codeLine="336" d="M2783.74,796.2794 C2701.42,842.9794 2586.63,914.4294 2499,993.6094 C2422.76,1062.4994 2351.88,1161.4594 2317.22,1212.9894 " fill="none" id="ModeFactory-to-StrategyMode" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2314.39,1217.2194,2322.723,1211.9695,2317.1734,1213.0657,2316.0772,1207.5161,2314.39,1217.2194" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="2500" y="1008.1045">«use»</text></g><!--MD5=[776dcb658b4a1abdf11a5b5d8771d343]
+link ModeFactory to Facile--><g id="link_ModeFactory_Facile"><path codeLine="337" d="M2882.44,796.2694 C2864.74,943.0894 2813.85,1335.2194 2762,1454.6094 C2746.48,1490.3394 2727.11,1524.9094 2705.09,1558.0394 " fill="none" id="ModeFactory-to-Facile" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2702.11,1562.4894,2710.4305,1557.2197,2704.8835,1558.3291,2703.7741,1552.7821,2702.11,1562.4894" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="2850" y="1253.6045">«use»</text></g><!--MD5=[defeeaff1d832748d65db73c4ad27d9b]
+link ModeFactory to Classique--><g id="link_ModeFactory_Classique"><path codeLine="338" d="M2865.29,796.1494 C2841.92,845.6994 2802.03,917.1394 2749,963.6094 C2686.18,1018.6594 2638.69,984.2094 2578,1041.6094 C2427.35,1184.0794 2535.49,1342.5994 2361,1454.6094 C2092.24,1627.1194 1219.98,1407.8394 926,1532.6094 C921.6,1534.4794 917.21,1536.4094 912.83,1538.3994 " fill="none" id="ModeFactory-to-Classique" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="908.1,1540.5894,917.9476,1540.432,912.636,1538.4859,914.5821,1533.1743,908.1,1540.5894" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="2579" y="1253.6045">«use»</text></g><!--MD5=[cdcfcaed3a98703c2cdb1a0f2ad7d58f]
+link ModeFactory to Numerique--><g id="link_ModeFactory_Numerique"><path codeLine="339" d="M2851.97,796.2394 C2814.17,855.3794 2755.71,952.1494 2717,1041.6094 C2630.7,1241.0594 2746.34,1401.4594 2554,1502.6094 C2410.1,1578.2894 1973.08,1470.0894 1823,1532.6094 C1818.58,1534.4494 1814.18,1536.3494 1809.8,1538.3194 " fill="none" id="ModeFactory-to-Numerique" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1805.05,1540.4794,1814.8984,1540.385,1809.5994,1538.405,1811.5794,1533.1059,1805.05,1540.4794" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="2718" y="1253.6045">«use»</text></g><!--MD5=[13c6eec18698456b29046e251efe2718]
+@startuml Mastermind
+
+title Conception Mastermind
+
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+skinparam classFontStyle Bold
+hide enum methods
+
+package Mastermind
+{
+    /''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    '                          main                           '
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+    class MastermindApp{
+        + {static} main(args: String[])
+    }
+
+    /''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    '                         models                          '
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+    package model
+    {
+        class MastermindFacade {
+            + jouerPartie()
+        }
+
+        class Partie {
+            - joueur: String
+            - _score: Score
+            - mode: StrategyMode
+            - _manche: Manche
+            # {static} nbManche: Integer
+            # {static} nbPionsCombinaison: Integer
+            # {static} maxTentatives: Integer
+            # {static} nbPions: Integer
+            + <<create>> Partie()
+            + setMode(mode : StrategyMode)
+            + setNbManches(nbManches : Integer)
+            + setNbPionCombinaison(NbPionsCombinaison : Integer)
+            + setMaxTentatives(maxTentatives : Integer)
+            + setNbPions(nbPions : Integer)
+            + getMode() : StrategyMode
+            + getNbManches() : Integer
+            + getScore(): Score
+            + getNbPionCombinaison() : Integer
+            + getMaxTentatives() : Integer
+            + getNbPions() : Integer
+            + getJoueur() : String
+            + get_manches(): Manche
+            + setManche()
+        }
+
+        class Score {
+            - scoreManches: Integer[*]
+            - scoreTotal: Integer
+            + <<create>> Score(nbMances : Integer)
+            + calculerScoreManche(indices : LigneIndice, mode : StrategyMode) : Integer
+            + calculerScoreTotal(): Integer
+            + getScoreManche(numManche : Integer) : Integer
+            + getScoreManches() : Integer[*]
+            + getScoreTotal() : Integer
+        }
+
+        class Manche {
+            - _indices: LigneIndice[*]
+            - _combinaisonSecrete: Combinaison
+            - _combinaisonsJoueur: Combinaison[*]
+            - numTentative: Integer
+            + {static} _combinaisonsJoueurTest: Combinaison
+            - _ligneIndice: LigneIndice
+            + <<create>> Manche()
+            + setLigneIndice()
+            + unsetCombinaisonJoueur()
+            + unsetLigneIndice()
+            + ajouterTentative(tentative: Combinaison)
+            + getIndices(): LigneIndice[*]
+            + getCombinaisonsJoueur(): Combinaison[*]
+            + getNumTentative() : Integer
+            + affichageCombinaisonSecrete()
+            + affichageCombinaisonJoueur()
+            + affichageIndices()
+            + estGagne(NbPionsCombinaison : Integer) : Boolean
+            + estDepasse(maxTentatives : Integer) : Boolean
+            + verifierFinManche(NbPionsCombinaison : Integer, maxTentatives : Integer): Boolean
+            + get_ligneIndice(): LigneIndice
+        }
+
+        class Combinaison {
+            - _combinaisonJoueur: Pions[*]
+            - {static} _combinaisonSecrete: Pions[*]
+            + <<create>> Combinaison(flag: int)
+            + setCombinaisonJoueur(combinaisonJoueur: Pions)
+            + {static} genererCombinaisonSecrete(): Pions[*]
+            + addCombinaisonJoueur(choix: String)
+            + verifierCorrespondance(tentative: Pions[*]): Indice[*]
+            + {static} getCombinaisonSecrete(): Pions[*]
+            + getCombinaisonJoueur(): Pions[*]
+        }
+
+        class LigneIndices {
+            - _indices: Indice[*]
+            + <<create>> LigneIndices()
+            + setIndices(indices: Indice)
+            + getIndices(): Indice[*]
+            + getNbPositionCouleur() : int
+            + getNbCouleur() : int
+            + getNbAbsent() : int
+        }
+
+        class ModeFactory {
+            + <<create>> ModeFactory()
+            + createFacile() : StrategyMode
+            + createClassique() : StrategyMode
+            + createNumerique() : StrategyMode
+        }
+
+        enum Pions {
+            +ROUGE
+            +BLEU
+            +VERT
+            +JAUNE
+            +ORANGE
+            +VIOLET
+            +BLANC
+            +NOIR
+        }
+
+        enum Indice {
+            +BIEN_PLACE
+            +MAL_PLACE
+            +ABSENT
+        }
+    }
+
+    /''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    '                          view                           '
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+    package view
+    {
+        interface StrategyMode {
+            + select()
+        }
+        class Facile implements StrategyMode {
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
+        }
+
+        class Classique implements StrategyMode {
+            + select()
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
+        }
+
+        class Numerique implements StrategyMode {
+            + select()
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
+        }
+
+        class EcranDemarrage {
+            - btnJouer: JButton 
+            - btnCredits: JButton 
+            - panelBoutonsMenu: JPanel 
+            - menu: JPanel 
+            - lblTitre: JLabel 
+            + EcranDemarrage()
+        }
+
+        class EcranFin {
+            + panelWin: JPanel 
+            + panelLoose: JPanel 
+            + rejouer: JButton 
+            + <<Create>> EcranFin()
+            + affichageWin()
+            + affichageLoose()
+        }
+    }
+
+    /''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    '                       controller                        '
+    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+    package controller
+    {
+        class EcranParametres {
+            - spnNbMancheValue: Integer
+            - spnPionsCombinaisonValue: Integer
+            - spnNbTentativesValue: Integer
+            - spnPionsDifferentValue: Integer
+            - nomJoueur: String
+            + <<Create>> EcranParametres()
+        }
+    }
+}
+
+/''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'                          lien                           '
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''/
+MastermindApp ..> MastermindFacade : <<uses>>
+MastermindFacade ..> Partie : <<uses>>
+MastermindFacade ..> StrategyMode : <<uses>>
+MastermindFacade ..> ModeFactory : <<uses>>
+Partie *- -> "3..5\n -_manches" Manche: > est composé de
+Partie o-> "1\n-_mode" StrategyMode : > select
+Partie *-> "1\n-_score" Score
+Manche *-> "*\n -_indices" LigneIndices: > est composé de
+Manche *- -> "10..12\n -_tentatives" Combinaison: > est composé de
+Manche *- -> "1\n -_combinaison_secrete" Combinaison: > est composé de
+LigneIndices - -> "*\n -_indices" Indice: > est composé de
+Combinaison o- -> "4..6\n -_pions" Pions: > est composé de
+ModeFactory ..> StrategyMode : <<use>>
+ModeFactory ..> Facile : <<use>>
+ModeFactory ..> Classique : <<use>>
+ModeFactory ..> Numerique : <<use>>
+@enduml
+
+@startuml Mastermind
+
+title Conception Mastermind
+
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+skinparam classFontStyle Bold
+hide enum methods
+
+package Mastermind
+{
+    class MastermindApp{
+        + {static} main(args: String[])
+    }
+
+    package model
+    {
+        class MastermindFacade {
+            + jouerPartie()
+        }
+
+        class Partie {
+            - joueur: String
+            - _score: Score
+            - mode: StrategyMode
+            - _manche: Manche
+            # {static} nbManche: Integer
+            # {static} nbPionsCombinaison: Integer
+            # {static} maxTentatives: Integer
+            # {static} nbPions: Integer
+            + <<create>> Partie()
+            + setMode(mode : StrategyMode)
+            + setNbManches(nbManches : Integer)
+            + setNbPionCombinaison(NbPionsCombinaison : Integer)
+            + setMaxTentatives(maxTentatives : Integer)
+            + setNbPions(nbPions : Integer)
+            + getMode() : StrategyMode
+            + getNbManches() : Integer
+            + getScore(): Score
+            + getNbPionCombinaison() : Integer
+            + getMaxTentatives() : Integer
+            + getNbPions() : Integer
+            + getJoueur() : String
+            + get_manches(): Manche
+            + setManche()
+        }
+
+        class Score {
+            - scoreManches: Integer[*]
+            - scoreTotal: Integer
+            + <<create>> Score(nbMances : Integer)
+            + calculerScoreManche(indices : LigneIndice, mode : StrategyMode) : Integer
+            + calculerScoreTotal(): Integer
+            + getScoreManche(numManche : Integer) : Integer
+            + getScoreManches() : Integer[*]
+            + getScoreTotal() : Integer
+        }
+
+        class Manche {
+            - _indices: LigneIndice[*]
+            - _combinaisonSecrete: Combinaison
+            - _combinaisonsJoueur: Combinaison[*]
+            - numTentative: Integer
+            + {static} _combinaisonsJoueurTest: Combinaison
+            - _ligneIndice: LigneIndice
+            + <<create>> Manche()
+            + setLigneIndice()
+            + unsetCombinaisonJoueur()
+            + unsetLigneIndice()
+            + ajouterTentative(tentative: Combinaison)
+            + getIndices(): LigneIndice[*]
+            + getCombinaisonsJoueur(): Combinaison[*]
+            + getNumTentative() : Integer
+            + affichageCombinaisonSecrete()
+            + affichageCombinaisonJoueur()
+            + affichageIndices()
+            + estGagne(NbPionsCombinaison : Integer) : Boolean
+            + estDepasse(maxTentatives : Integer) : Boolean
+            + verifierFinManche(NbPionsCombinaison : Integer, maxTentatives : Integer): Boolean
+            + get_ligneIndice(): LigneIndice
+        }
+
+        class Combinaison {
+            - _combinaisonJoueur: Pions[*]
+            - {static} _combinaisonSecrete: Pions[*]
+            + <<create>> Combinaison(flag: int)
+            + setCombinaisonJoueur(combinaisonJoueur: Pions)
+            + {static} genererCombinaisonSecrete(): Pions[*]
+            + addCombinaisonJoueur(choix: String)
+            + verifierCorrespondance(tentative: Pions[*]): Indice[*]
+            + {static} getCombinaisonSecrete(): Pions[*]
+            + getCombinaisonJoueur(): Pions[*]
+        }
+
+        class LigneIndices {
+            - _indices: Indice[*]
+            + <<create>> LigneIndices()
+            + setIndices(indices: Indice)
+            + getIndices(): Indice[*]
+            + getNbPositionCouleur() : int
+            + getNbCouleur() : int
+            + getNbAbsent() : int
+        }
+
+        class ModeFactory {
+            + <<create>> ModeFactory()
+            + createFacile() : StrategyMode
+            + createClassique() : StrategyMode
+            + createNumerique() : StrategyMode
+        }
+
+        enum Pions {
+            +ROUGE
+            +BLEU
+            +VERT
+            +JAUNE
+            +ORANGE
+            +VIOLET
+            +BLANC
+            +NOIR
+        }
+
+        enum Indice {
+            +BIEN_PLACE
+            +MAL_PLACE
+            +ABSENT
+        }
+    }
+
+    package view
+    {
+        interface StrategyMode {
+            + select()
+        }
+        class Facile implements StrategyMode {
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
+        }
+
+        class Classique implements StrategyMode {
+            + select()
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
+        }
+
+        class Numerique implements StrategyMode {
+            + select()
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
+        }
+
+        class EcranDemarrage {
+            - btnJouer: JButton 
+            - btnCredits: JButton 
+            - panelBoutonsMenu: JPanel 
+            - menu: JPanel 
+            - lblTitre: JLabel 
+            + EcranDemarrage()
+        }
+
+        class EcranFin {
+            + panelWin: JPanel 
+            + panelLoose: JPanel 
+            + rejouer: JButton 
+            + <<Create>> EcranFin()
+            + affichageWin()
+            + affichageLoose()
+        }
+    }
+
+    package controller
+    {
+        class EcranParametres {
+            - spnNbMancheValue: Integer
+            - spnPionsCombinaisonValue: Integer
+            - spnNbTentativesValue: Integer
+            - spnPionsDifferentValue: Integer
+            - nomJoueur: String
+            + <<Create>> EcranParametres()
+        }
+    }
+}
+
+MastermindApp ..> MastermindFacade : <<uses>>
+MastermindFacade ..> Partie : <<uses>>
+MastermindFacade ..> StrategyMode : <<uses>>
+MastermindFacade ..> ModeFactory : <<uses>>
+Partie *- -> "3..5\n -_manches" Manche: > est composé de
+Partie o-> "1\n-_mode" StrategyMode : > select
+Partie *-> "1\n-_score" Score
+Manche *-> "*\n -_indices" LigneIndices: > est composé de
+Manche *- -> "10..12\n -_tentatives" Combinaison: > est composé de
+Manche *- -> "1\n -_combinaison_secrete" Combinaison: > est composé de
+LigneIndices - -> "*\n -_indices" Indice: > est composé de
+Combinaison o- -> "4..6\n -_pions" Pions: > est composé de
+ModeFactory ..> StrategyMode : <<use>>
+ModeFactory ..> Facile : <<use>>
+ModeFactory ..> Classique : <<use>>
+ModeFactory ..> Numerique : <<use>>
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>
