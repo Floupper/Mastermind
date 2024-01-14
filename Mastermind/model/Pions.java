@@ -1,4 +1,4 @@
-package Mastermind;
+package Mastermind.model;
 
 public enum Pions {
     ROUGE,

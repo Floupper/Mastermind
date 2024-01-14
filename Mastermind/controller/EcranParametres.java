@@ -1,6 +1,6 @@
-package Mastermind;
+package Mastermind.controller;
 
-import java.awt.CardLayout;
+import Mastermind.view.Facile;
 
 import javax.swing.*;
 

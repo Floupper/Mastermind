@@ -1,4 +1,4 @@
-package Mastermind;
+package Mastermind.model;
 
 import java.util.ArrayList;
 

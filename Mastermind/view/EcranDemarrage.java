@@ -1,4 +1,6 @@
-package Mastermind;
+package Mastermind.view;
+
+import Mastermind.controller.EcranParametres;
 
 import java.awt.Dimension;
 
