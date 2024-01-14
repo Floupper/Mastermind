@@ -30,8 +30,14 @@ public class Facile extends JFrame {
     private int position;
 
     private EcranParametres parametres;
+    private String userName;
+    private int NbMancheUser;
+    private int PionsCombinaisonUser;
+    private int NbTentativesUser;
+    private int PionsDifferentUser;
 
-    public Facile() {
+    public Facile(String nomJoueur, int spnNbMancheValue, int spnPionsCombinaisonValue, int spnNbTentativesValue,
+            int spnPionsDifferentValue) {
         // définition de la page
         super("Mastermind");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,6 +45,12 @@ public class Facile extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
+
+        this.userName = nomJoueur;
+        this.NbMancheUser = spnNbMancheValue;
+        this.PionsCombinaisonUser = spnPionsCombinaisonValue;
+        this.NbTentativesUser = spnNbTentativesValue;
+        this.PionsDifferentUser = spnPionsDifferentValue;
 
         informations = setInfo();
         pions = setPions();
@@ -77,7 +89,7 @@ public class Facile extends JFrame {
         JLabel Joueur = new JLabel();
         // String nomJoueur = "Joueur : " + parametres.getTxtNom();
         // Joueur.setText(nomJoueur);
-        Joueur.setText("Joueur : Macron");
+        Joueur.setText("Joueur : " + userName);
         return Joueur;
     }
 
