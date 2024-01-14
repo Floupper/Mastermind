@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class MastermindApp {
     public static void main(String[] args) {
         MastermindFacade facade = new MastermindFacade();
-        //facade.jouerPartie();
+        // facade.jouerPartie();
         EcranDemarrage ecran = new EcranDemarrage();
-        //WindowSettings windowSettings = new WindowSettings();
-        //Facile facile = new Facile();
+        // Facile facile = new Facile();
+        // EcranFin ecranFin = new EcranFin();
     }
 }
