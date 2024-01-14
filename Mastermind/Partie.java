@@ -40,7 +40,14 @@ public class Partie {
     }
 
     public void setJoueur(String joueur) {
-        this.joueur = joueur;
+        if (joueur.isEmpty())
+        {
+            this.joueur = "Baguette";
+        }
+        else
+        {
+            this.joueur = joueur;
+        }
     }
 
     public StrategyMode getMode() {
@@ -71,5 +78,10 @@ public class Partie {
     }
     public Manche get_manches() {
         return this._manches;
+    }
+
+    public void setManche()
+    {
+        _manches = new Manche();
     }
 }

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 public class Facile extends JFrame {
+    private JPanel panel;
     private JPanel pnlInfo;
     private JPanel informations;
     private JPanel pions;
@@ -56,7 +57,7 @@ public class Facile extends JFrame {
 
 
         // définition du panel global
-        JPanel panel = new JPanel();
+        this.panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.add(informations, BorderLayout.PAGE_START);
         panel.revalidate();
@@ -127,7 +128,7 @@ public class Facile extends JFrame {
         MouseListener clique = new MouseListener() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
-                if (position < 4) {
+                if (position < partie.getNbPionCombinaison()) {
                     if (e.getSource() == rouge) {
                         tentative.remove(position);
                         tentative.add(setRouge(), position);
@@ -241,7 +242,7 @@ public class Facile extends JFrame {
 
         JButton suppr = new JButton("Supprimer");
         suppr.addActionListener(actionEvent -> {
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < partie.getNbPionCombinaison(); i++) {
                 tentative.remove(i);
                 tentative.add(setVide(), i);
                 tentative.revalidate();
@@ -254,8 +255,10 @@ public class Facile extends JFrame {
 
         JButton valider = new JButton("Valider");
         valider.addActionListener(actionEvent -> {
+            //regarde si la ligne est complète
             if (this.tent.size() == partie.getNbPionCombinaison())
             {
+                //création de la combinaison
                 String comb = "";
                 for(String pion : tent)
                 {
@@ -265,22 +268,41 @@ public class Facile extends JFrame {
                 partie.get_manches().unsetLigneIndice();
                 Combinaison combinaison = new Combinaison(0);
                 partie.get_manches()._combinaisonsJoueurTest.addCombinaisonJoueur(comb);
+                //ajout de la combinaison et de la ligne d'indice
                 partie.get_manches().ajouterTentative(combinaison);
                 partie.get_manches().setLigneIndice();
 
                 partie.get_manches().affichageCombinaisonJoueur();
                 partie.get_manches().affichageCombinaisonSecrete();
+                //regarde si combinaison gagnante
                 if(partie.get_manches().verifierFinManche(partie.getMaxTentatives(), partie.getNbPionCombinaison()))
                 {
-                    partie.getScore().calculerScoreManche(partie.get_manches().getIndices().get(partie.get_manches().getNumTentative() - 1));
+                    partie.getScore().calculerScoreManche(partie.get_manches().get_ligneIndice());
                     partie.getScore().calculerScoreTotal();
                     this.scoreTotal.setText("Score Total : " + partie.getScore().getScoreTotal());
+                    this.nbManche++;
+                    partie.setManche();
+                    if (nbManche > partie.getNbManches())
+                    {
+                        new EcranFin();
+                        dispose();
+                    }
+                    this.numManche.setText("Manche n°" + this.nbManche);
+                    tentative = setTentative();
+                    tentatives = setTentatives();
+                    indices = setIndices();
+                    panel.add(tentatives, BorderLayout.CENTER);
+                    panel.revalidate();
+                    panel.add(indices, BorderLayout.LINE_END);
+                    panel.revalidate();
+                    this.numTentative.setText("tentative n°" + partie.get_manches().getNumTentative());
                 }
+                //sinon ajoute visuel
                 else {
                     addTentativePasser();
                     addIndice();
                 }
-                for (int i = 0; i < 4; i++) {
+                for (int i = 0; i < partie.getNbPionCombinaison(); i++) {
                     tentative.remove(i);
                     tentative.add(setVide(), i);
                     tentative.revalidate();
