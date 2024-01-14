@@ -1,6 +1,6 @@
-package Mastermind;
+package Mastermind.model;
 
-import java.util.ArrayList;
+import Mastermind.view.EcranDemarrage;
 
 public class MastermindApp {
     public static void main(String[] args) {

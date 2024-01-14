@@ -1,8 +1,7 @@
-package Mastermind;
+package Mastermind.model;
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Combinaison {
     private ArrayList<Pions> _combinaisonJoueur;

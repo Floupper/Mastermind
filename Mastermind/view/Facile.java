@@ -1,7 +1,10 @@
-package Mastermind;
+package Mastermind.view;
+
+import Mastermind.model.Combinaison;
+import Mastermind.model.Indice;
+import Mastermind.model.Partie;
 
 import java.awt.*;
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 

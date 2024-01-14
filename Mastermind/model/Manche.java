@@ -1,4 +1,4 @@
-package Mastermind;
+package Mastermind.model;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ public class Manche {
     private Combinaison _combinaisonSecrete;
     private ArrayList<Combinaison> _combinaisonsJoueur;
     private int numTentative;
-    protected static Combinaison _combinaisonsJoueurTest;
+    public static Combinaison _combinaisonsJoueurTest;
     private LigneIndice _ligneIndice;
 
     public Manche() {
