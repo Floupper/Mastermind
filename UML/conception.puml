@@ -105,6 +105,7 @@ package Mastermind
             + getIndices(): Indice[*]
             + getNbPositionCouleur() : int
             + getNbCouleur() : int
+            + getNbAbsent() : int
         }
 
         class ModeFactory {
@@ -189,10 +190,98 @@ package Mastermind
 
         class Classique implements StrategyMode {
             + select()
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
         }
 
         class Numerique implements StrategyMode {
             + select()
+            - panel : JPanel
+            - pnlInfo : JPanel
+            - informations : JPanel
+            - pions : JPanel
+            - tentatives : JPanel
+            - tentative : JPanel
+            - indices : JPanel
+            - rouge : JLabel
+            - bleu : JLabel
+            - vert : JLabel
+            - jaune : JLabel
+            - orange : JLabel
+            - violet : JLabel
+            - blanc : JLabel
+            - noir : JLabel
+            - position : int
+            - partie : Partie
+            - numManche : JLabel
+            - numTentative : JLabel
+            - nbManche : int
+            - tent = new ArrayList<String>() : String[*]
+            - scoreTotal : JLabel
+            + <<Creata>> Facile(nomJoueur: String, spnNbMancheValue: int, spnPionsCombinaisonValue: int, spnNbTentativesValue: int,
+            spnPionsDifferentValue: int)
+            + setInfos(): JPanel
+            + setJoueur(): JLabel
+            + setNumManche(): JLabel
+            + setNbTentative(): JLabel
+            + setScoreTotal(): JLabel
+            + setPions(): JPanel
+            + setRouge(): JLabel
+            + setBleu(): JLabel
+            + setVert(): JLabel
+            + setJaune(): JLabel
+            + setOrange(): JLabel
+            + setViolet(): JLabel
+            + setBlanc(): JLabel
+            + setNoir(): JLabel
+            + setTentatives(): JPanel
+            + addTentativesPasser()
+            + setTentative(): JPanel
+            + setVide() : JLabel
+            + setIndices(): JPanel
+            + addIndices()
         }
 
         class EcranDemarrage {
