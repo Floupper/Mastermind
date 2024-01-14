@@ -1,4 +1,4 @@
-package Mastermind.model;
+package Mastermind;
 
 import Mastermind.view.EcranDemarrage;
 
