@@ -53,16 +53,17 @@ public class EcranParametres extends JFrame {
         JButton btnValider = new JButton("valider");
         btnValider.addActionListener(e -> {
             System.out.println("Nombre de manche : " + spnNbManche.getValue());
-            spnNbMancheValue = (int) spnNbManche.getValue();
             System.out.println("Nombre de pions par combinaison : " + spnPionsCombinaison.getValue());
-            spnPionsCombinaisonValue = (int) spnPionsCombinaison.getValue();
             System.out.println("Nombre de tentatives par manche : " + spnNbTentatives.getValue());
-            spnNbTentativesValue = (int) spnNbTentatives.getValue();
             System.out.println("Nombre de pions possible par combinaison : " + spnPionsDifferent.getValue());
-            spnPionsDifferentValue = (int) spnPionsDifferent.getValue();
             System.out.println("Nom : " + txtNom.getText());
+            spnNbMancheValue = (int) spnNbManche.getValue();
+            spnPionsCombinaisonValue = (int) spnPionsCombinaison.getValue();
+            spnNbTentativesValue = (int) spnNbTentatives.getValue();
+            spnPionsDifferentValue = (int) spnPionsDifferent.getValue();
             nomJoueur = txtNom.getText();
-            new Facile();
+            new Facile(nomJoueur, spnNbMancheValue, spnPionsCombinaisonValue, spnNbTentativesValue,
+                    spnPionsDifferentValue);
             dispose();
         });
         btnValider.setAlignmentX(CENTER_ALIGNMENT);
@@ -87,25 +88,5 @@ public class EcranParametres extends JFrame {
 
         setContentPane(panel);
         setVisible(true);
-    }
-
-    public int getSpnNbManche() {
-        return spnNbMancheValue;
-    }
-
-    public int getSpnPionsCombinaison() {
-        return spnPionsCombinaisonValue;
-    }
-
-    public int getSpnNbTentatives() {
-        return spnNbTentativesValue;
-    }
-
-    public int getSpnPionsDifferent() {
-        return spnPionsDifferentValue;
-    }
-
-    public String getTxtNom() {
-        return nomJoueur;
     }
 }

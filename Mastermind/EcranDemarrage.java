@@ -55,7 +55,7 @@ public class EcranDemarrage extends JFrame {
         presentation.setAlignmentX(CENTER_ALIGNMENT);
         presentation.setAlignmentY(CENTER_ALIGNMENT);
         presentation.setText(
-                "Bienvenue sur le jeu du Mastermind ! \n Le but du jeu est de trouver la combinaison secrète de l'ordinateur. \n Pour cela, vous devez proposer une combinaison de pions de couleurs différentes. \n  L'ordinateur vous indiquera ensuite le nombre de pions bien placés et le nombre de pions mal placés. \n Vous avez 10 tentatives pour trouver la combinaison secrète. \n Bonne chance !");
+                "<html>Bienvenue sur le jeu du Mastermind ! <br> Le but du jeu est de trouver la combinaison secrète de l'ordinateur. <br> Pour cela, vous devez proposer une combinaison de pions de couleurs différentes. <br>  L'ordinateur vous indiquera ensuite le nombre de pions bien placés et le nombre de pions mal placés. <br> Vous avez 10 tentatives pour trouver la combinaison secrète. <br> Bonne chance !</html>");
         presentation.setPreferredSize(new Dimension(1000, 200));
 
         panelBoutonsMenu = new JPanel();

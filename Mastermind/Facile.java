@@ -30,8 +30,14 @@ public class Facile extends JFrame {
     private int position;
 
     private EcranParametres parametres;
+    private String userName;
+    private int NbMancheUser;
+    private int PionsCombinaisonUser;
+    private int NbTentativesUser;
+    private int PionsDifferentUser;
 
-    public Facile() {
+    public Facile(String nomJoueur, int spnNbMancheValue, int spnPionsCombinaisonValue, int spnNbTentativesValue,
+            int spnPionsDifferentValue) {
         // définition de la page
         super("Mastermind");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,6 +45,12 @@ public class Facile extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
+
+        this.userName = nomJoueur;
+        this.NbMancheUser = spnNbMancheValue;
+        this.PionsCombinaisonUser = spnPionsCombinaisonValue;
+        this.NbTentativesUser = spnNbTentativesValue;
+        this.PionsDifferentUser = spnPionsDifferentValue;
 
         informations = setInfo();
         pions = setPions();
@@ -77,7 +89,7 @@ public class Facile extends JFrame {
         JLabel Joueur = new JLabel();
         // String nomJoueur = "Joueur : " + parametres.getTxtNom();
         // Joueur.setText(nomJoueur);
-        Joueur.setText("Joueur : Macron");
+        Joueur.setText("Joueur : " + userName);
         return Joueur;
     }
 
@@ -316,7 +328,7 @@ public class Facile extends JFrame {
 
     public JPanel setTentatives() {
         JPanel pnlTentatives = new JPanel();
-        pnlTentatives.setLayout(new GridLayout(8, 1));
+        pnlTentatives.setLayout(new GridLayout(NbTentativesUser, 1));
         pnlTentatives.setBorder(BorderFactory.createLineBorder(Color.black));
         pnlTentatives.add(tentative);
         return pnlTentatives;
@@ -324,7 +336,7 @@ public class Facile extends JFrame {
 
     public void addTentativePasser(ArrayList<String> tentative) {
         JPanel pnlTentative = new JPanel();
-        pnlTentative.setLayout(new GridLayout(1, 8));
+        pnlTentative.setLayout(new GridLayout(1, PionsCombinaisonUser));
         for (int i = 0; i < tentative.size(); i++) {
             if (tentative.get(0) == "rouge") {
                 pnlTentative.add(setRouge());
@@ -358,8 +370,8 @@ public class Facile extends JFrame {
         // définition du panel pour une tentative
         position = 0;
         JPanel tentative = new JPanel();
-        tentative.setLayout(new GridLayout(1, 8));
-        for (int i = 0; i < 4; i++) {
+        tentative.setLayout(new GridLayout(1, PionsCombinaisonUser));
+        for (int i = 0; i < PionsCombinaisonUser; i++) {
             tentative.add(setVide());
         }
         return tentative;
