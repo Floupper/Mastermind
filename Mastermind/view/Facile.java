@@ -328,56 +328,56 @@ public class Facile extends JFrame {
     public JLabel setRouge() {
         JLabel rouge = new JLabel();
         rouge.setIcon(
-                new ImageIcon("../PionsPng/rouge.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/rouge.png")));
         return rouge;
     }
 
     public JLabel setBleu() {
         JLabel bleu = new JLabel();
         bleu.setIcon(
-                new ImageIcon("../PionsPng/bleu.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/bleu.png")));
         return bleu;
     }
 
     public JLabel setVert() {
         JLabel vert = new JLabel();
         vert.setIcon(
-                new ImageIcon("../PionsPng/vert.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/vert.png")));
         return vert;
     }
 
     public JLabel setJaune() {
         JLabel jaune = new JLabel();
         jaune.setIcon(
-                new ImageIcon("../PionsPng/jaune.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/jaune.png")));
         return jaune;
     }
 
     public JLabel setOrange() {
         JLabel orange = new JLabel();
         orange.setIcon(
-                new ImageIcon("../PionsPng/orange.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/orange.png")));
         return orange;
     }
 
     public JLabel setViolet() {
         JLabel violet = new JLabel();
         violet.setIcon(
-                new ImageIcon("../PionsPng/violet.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/violet.png")));
         return violet;
     }
 
     public JLabel setBlanc() {
         JLabel blanc = new JLabel();
         blanc.setIcon(
-                new ImageIcon("../PionsPng/blanc.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/blanc.png")));
         return blanc;
     }
 
     public JLabel setNoir() {
         JLabel noir = new JLabel();
         noir.setIcon(
-                new ImageIcon("../PionsPng/noir.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/noir.png")));
         return noir;
     }
 
@@ -435,7 +435,7 @@ public class Facile extends JFrame {
     public JLabel setVide() {
         JLabel vide = new JLabel();
         vide.setIcon(
-                new ImageIcon("../PionsPng/vide.png"));
+                new ImageIcon(getClass().getClassLoader().getResource("PionsPng/vide.png")));
         return vide;
     }
 
